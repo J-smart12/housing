@@ -3,10 +3,25 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Properties extends Model
 {
-    protected $fillable = ['name','phone', 'slug', 'excerpt', 'link', 'image', 'address', 'status', 'payment_status', 'is_featured', 'attribute_classes', 'listed_date'];
+    use HasFactory;
+    protected $fillable = [
+        'name', 
+        'phone', 
+        'slug', 
+        'excerpt', 
+        'link', 
+        'image', 
+        'address', 
+        'status', 
+        'payment_status', 
+        'is_featured', 
+        'attribute_classes', 
+        'listed_date',
+    ];
 
     public function user()
     {
@@ -25,7 +40,7 @@ class Properties extends Model
 
     public function features()
     {
-        return $this->hasMany(Feature::class);
+        return $this->belongsToMany(Feature::class, 'feature_property');
     }
 
     public function offerTypes()
@@ -33,15 +48,18 @@ class Properties extends Model
         return $this->hasMany(OfferType::class);
     }
 
-    public function categories() {
+    public function categories()
+    {
         return $this->hasMany(Category::class);
     }
 
-    public function prices() {
+    public function prices()
+    {
         return $this->hasMany(Price::class);
     }
 
-    public function listingReply() {
+    public function listingReply()
+    {
         return $this->hasMany(ListingReply::class);
     }
 }

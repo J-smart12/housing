@@ -1402,7 +1402,7 @@
                 </div>
 
                 <span class="mh-top-header__element mh-top-header__element--phone">
-                    <a href="tel:{{$settings->phone}}">
+                    <a href="tel:{{ preg_replace('/\D+/', '', $settings->phone) }}">
                         <i class="flaticon-phone"></i>
                         {{$settings->phone}}
                     </a>
@@ -1463,10 +1463,10 @@
                                     <span class="symbol_cross"><i class="fas fa-times"></i></span>
                                 </span>
                             </a>
-                            <a class="logo_link" href={{url("/")}} title={{ $setting->sitename }}>
+                            <a class="logo_link" href={{url("/")}} title={{ $settings->sitename }}>
                                 <img src={{ asset($settings->logo) }}
                                     data-logo={{ asset($settings->logo) }}
-                                    alt={{ $setting->sitename }} />
+                                    alt={{ $settings->sitename }} />
                             </a>
                         </span>
                         <!-- /class="nav_logo" -->
@@ -1498,8 +1498,7 @@
                                             <i class=""></i>
                                             <span class="link_content">
                                                 <span class="link_text">
-                                                    City >> Neighborhood >>
-                                                    Street
+                                                    City >> Neighborhood >> Street
                                                 </span>
                                             </span>
                                         </a>
@@ -1792,7 +1791,7 @@
                                                         :property-id="{{ $featured->id }}">
                                                     </add-to-favorite>
 
-                                                    <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->name)}} title={{ $featured->name }} class="mh-thumbnail">
+                                                    <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->slug)}} title={{ $featured->name }} class="mh-thumbnail">
                                                         <div class="mh-thumbnail__inner">
                                                             <img data-srcset={{ $featured->image }}
                                                                 src={{ $featured->image }}
@@ -1805,7 +1804,7 @@
                                                         </div>
 
                                                         <div class="mh-caption">
-                                                        @foreach($featured->labels as $label)
+                                                        {{-- @foreach($featured->labels as $label)
                                                             @if($label == "for sale")
                                                                 <div class="mh-caption__inner mh-label__sale" style=" background-color: #29aae3; color: #fff;">
                                                                     For Sale
@@ -1816,7 +1815,7 @@
                                                                     Open House
                                                                 </div>
                                                             @endif
-                                                        @endforeach
+                                                        @endforeach --}}
                                                             
                                                         </div>
 
@@ -1829,7 +1828,7 @@
 
                                                     <div class="mh-estate-vertical__content">
                                                         <h3 class="mh-estate-vertical__heading">
-                                                            <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->name)}}
+                                                            <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->slug)}}
                                                                 title={{ $featured->name }}>
                                                                 {{ $featured->name }}
                                                             </a>
@@ -1853,7 +1852,7 @@
                                                                     <strong>
                                                                         Bedrooms:
                                                                     </strong>
-                                                                    {{ count($featured->attributes->bedrooms) }}
+                                                                    {{-- {{ count($featured->attributes->bedrooms) }} --}}
                                                                 </div>
 
                                                                 <div
@@ -1861,7 +1860,7 @@
                                                                     <strong>
                                                                         Bathrooms:
                                                                     </strong>
-                                                                    {{ count($featured->attributes->bathrooms) }}
+                                                                    {{-- {{ count($featured->attributes->bathrooms) }} --}}
                                                                 </div>
 
                                                                 <div
@@ -1870,7 +1869,7 @@
                                                                         Property
                                                                         size:
                                                                     </strong>
-                                                                    {{ count($featured->property_size) }}
+                                                                    {{ $featured->property_size }}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1887,20 +1886,20 @@
                                                                             <compare-button
                                                                                 class="myhome-compare-button myhome-compare-button-list"
                                                                                 :estate='{
-                                                                                    "id": 113,
-                                                                                    "name": "Modern apartment in the city center",
-                                                                                    "slug": "modern-apartment-in-the-city-center",
-                                                                                    "excerpt": "Property overview\r\n3 bedroom flat , with all utilities and POOL already in! Gorgeous and secluded lot with panoramic views...",
-                                                                                    "link": "https:\/\/carmodyrealestates.com\/properties\/apartment\/chicago\/modern-apartment-in-the-city-center\/",
+                                                                                    "id": {{ $featured->id }},
+                                                                                    "name": {{ $featured->name }},
+                                                                                    "slug": {{ $featured->slug }},
+                                                                                    "excerpt": {{ $featured->excerpt }},
+                                                                                    "link": {{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->slug)}},
                                                                                     "has_price": true,
-                                                                                    "image_srcset": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-120x75.jpg 120w, https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-848x530.jpg 848w, https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-600x375.jpg 600w, https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-400x250.jpg 400w, https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-224x140.jpg 224w",
-                                                                                    "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center.jpg",
+                                                                                    "image_srcset": {{ $featured->image_srcset }},
+                                                                                    "image": {{ $featured->image }},
                                                                                     "attributes": [{
                                                                                             "name": "Property type",
                                                                                             "slug": "property-type",
                                                                                             "has_archive": true,
                                                                                             "values": [
-                                                                                                { "name": "Apartment", "value": "Apartment", "link": "https:\/\/carmodyrealestates.com\/property-type\/apartment\/", "slug": "apartment", "options": [] }
+                                                                                                { "name": "Apartment", "value": "Apartment", "link": "http://127.0.0.1:8000/property-type/apartment/", "slug": "apartment", "options": [] }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -1912,8 +1911,8 @@
                                                                                             "slug": "offer-type",
                                                                                             "has_archive": true,
                                                                                             "values": [
-                                                                                                { "name": "For Sale", "value": "For Sale", "link": "https:\/\/carmodyrealestates.com\/offer-type\/sale\/", "slug": "sale", "options": { "has_label": true, "bg_color": "#29aae3", "color": "#fff" } },
-                                                                                                { "name": "Open House", "value": "Open House", "link": "https:\/\/carmodyrealestates.com\/offer-type\/open-house\/", "slug": "open-house", "options": { "has_label": true, "bg_color": "#00a587", "color": "#ffffff" } }
+                                                                                                { "name": "For Sale", "value": "For Sale", "link": "http://127.0.0.1:8000/offer-type/sale/", "slug": "sale", "options": { "has_label": true, "bg_color": "#29aae3", "color": "#fff" } },
+                                                                                                { "name": "Open House", "value": "Open House", "link": "http://127.0.0.1:8000/offer-type/open-house/", "slug": "open-house", "options": { "has_label": true, "bg_color": "#00a587", "color": "#ffffff" } }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -1925,7 +1924,7 @@
                                                                                             "slug": "city",
                                                                                             "has_archive": true,
                                                                                             "values": [
-                                                                                                { "name": "Chicago", "value": "Chicago", "link": "https:\/\/carmodyrealestates.com\/city\/chicago\/", "slug": "chicago", "options": [] }
+                                                                                                { "name": "Chicago", "value": "Chicago", "link": "http://127.0.0.1:8000/city/chicago/", "slug": "chicago", "options": [] }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -1937,7 +1936,7 @@
                                                                                             "slug": "neighborhood",
                                                                                             "has_archive": true,
                                                                                             "values": [
-                                                                                                { "name": "Wicker Park", "value": "Wicker Park", "link": "https:\/\/carmodyrealestates.com\/neighborhood\/wicker-park\/", "slug": "wicker-park", "options": [] }
+                                                                                                { "name": "Wicker Park", "value": "Wicker Park", "link": "http://127.0.0.1:8000/neighborhood/wicker-park/", "slug": "wicker-park", "options": [] }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -1949,7 +1948,7 @@
                                                                                             "slug": "street",
                                                                                             "has_archive": true,
                                                                                             "values": [
-                                                                                                { "name": "CH Wicker Park Street #1", "value": "CH Wicker Park Street #1", "link": "https:\/\/carmodyrealestates.com\/street\/ch-wicker-park-street-1\/", "slug": "ch-wicker-park-street-1", "options": [] }
+                                                                                                { "name": "CH Wicker Park Street #1", "value": "CH Wicker Park Street #1", "link": "http://127.0.0.1:8000/street/ch-wicker-park-street-1/", "slug": "ch-wicker-park-street-1", "options": [] }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -2010,15 +2009,15 @@
                                                                                             "slug": "features",
                                                                                             "has_archive": false,
                                                                                             "values": [
-                                                                                                { "name": "Attic", "value": "Attic", "link": "https:\/\/carmodyrealestates.com\/features\/attic\/", "slug": "attic", "options": [] },
-                                                                                                { "name": "Dishwasher", "value": "Dishwasher", "link": "https:\/\/carmodyrealestates.com\/features\/dishwasher\/", "slug": "dishwasher", "options": [] },
-                                                                                                { "name": "Fireplace", "value": "Fireplace", "link": "https:\/\/carmodyrealestates.com\/features\/fireplace\/", "slug": "fireplace", "options": [] },
-                                                                                                { "name": "Garden", "value": "Garden", "link": "https:\/\/carmodyrealestates.com\/features\/garden\/", "slug": "garden", "options": [] },
-                                                                                                { "name": "Gym", "value": "Gym", "link": "https:\/\/carmodyrealestates.com\/features\/gym\/", "slug": "gym", "options": [] },
-                                                                                                { "name": "High ceilings", "value": "High ceilings", "link": "https:\/\/carmodyrealestates.com\/features\/high-ceilings\/", "slug": "high-ceilings", "options": [] },
-                                                                                                { "name": "Microwave", "value": "Microwave", "link": "https:\/\/carmodyrealestates.com\/features\/microwave\/", "slug": "microwave", "options": [] },
-                                                                                                { "name": "Patio", "value": "Patio", "link": "https:\/\/carmodyrealestates.com\/features\/patio\/", "slug": "patio", "options": [] },
-                                                                                                { "name": "Swimming Pool", "value": "Swimming Pool", "link": "https:\/\/carmodyrealestates.com\/features\/swimming-pool\/", "slug": "swimming-pool", "options": [] }
+                                                                                                { "name": "Attic", "value": "Attic", "link": "http://127.0.0.1:8000/features/attic/", "slug": "attic", "options": [] },
+                                                                                                { "name": "Dishwasher", "value": "Dishwasher", "link": "http://127.0.0.1:8000/features/dishwasher/", "slug": "dishwasher", "options": [] },
+                                                                                                { "name": "Fireplace", "value": "Fireplace", "link": "http://127.0.0.1:8000/features/fireplace/", "slug": "fireplace", "options": [] },
+                                                                                                { "name": "Garden", "value": "Garden", "link": "http://127.0.0.1:8000/features/garden/", "slug": "garden", "options": [] },
+                                                                                                { "name": "Gym", "value": "Gym", "link": "http://127.0.0.1:8000/features/gym/", "slug": "gym", "options": [] },
+                                                                                                { "name": "High ceilings", "value": "High ceilings", "link": "http://127.0.0.1:8000/features/high-ceilings/", "slug": "high-ceilings", "options": [] },
+                                                                                                { "name": "Microwave", "value": "Microwave", "link": "http://127.0.0.1:8000/features/microwave/", "slug": "microwave", "options": [] },
+                                                                                                { "name": "Patio", "value": "Patio", "link": "http://127.0.0.1:8000/features/patio/", "slug": "patio", "options": [] },
+                                                                                                { "name": "Swimming Pool", "value": "Swimming Pool", "link": "http://127.0.0.1:8000/features/swimming-pool/", "slug": "swimming-pool", "options": [] }
                                                                                             ],
                                                                                             "display_after": "",
                                                                                             "show": true,
@@ -2026,33 +2025,33 @@
                                                                                             "icon": ""
                                                                                         }
                                                                                     ],
-                                                                                    "address": "122-140 N Morgan St, Chicago, IL 60607, USA",
-                                                                                    "days_ago": "8 years ago",
-                                                                                    "is_featured": true,
+                                                                                    "address": {{ $featured->address }},
+                                                                                    "days_ago": {{ $featured->days_ago }},
+                                                                                    "is_featured": {{ $featured->is_featured }},
                                                                                     "offer_type": [
-                                                                                        { "name": "For Sale", "value": "For Sale", "link": "https:\/\/carmodyrealestates.com\/offer-type\/sale\/", "slug": "sale", "options": { "has_label": true, "bg_color": "#29aae3", "color": "#fff" } },
-                                                                                        { "name": "Open House", "value": "Open House", "link": "https:\/\/carmodyrealestates.com\/offer-type\/open-house\/", "slug": "open-house", "options": { "has_label": true, "bg_color": "#00a587", "color": "#ffffff" } }
+                                                                                        { "name": "For Sale", "value": "For Sale", "link": "http://127.0.0.1:8000/offer-type/sale/", "slug": "sale", "options": { "has_label": true, "bg_color": "#29aae3", "color": "#fff" } },
+                                                                                        { "name": "Open House", "value": "Open House", "link": "http://127.0.0.1:8000/offer-type/open-house/", "slug": "open-house", "options": { "has_label": true, "bg_color": "#00a587", "color": "#ffffff" } }
                                                                                     ],
-                                                                                    "status": "publish",
-                                                                                    "payment_status": "pre_payment",
-                                                                                    "attribute_classes": " mh-attribute-property-type__apartment mh-attribute-offer-type__sale mh-attribute-offer-type__open-house mh-attribute-city__chicago mh-attribute-neighborhood__wicker-park mh-attribute-street__ch-wicker-park-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-features__attic mh-attribute-features__dishwasher mh-attribute-features__fireplace mh-attribute-features__garden mh-attribute-features__gym mh-attribute-features__high-ceilings mh-attribute-features__microwave mh-attribute-features__patio mh-attribute-features__swimming-pool",
+                                                                                    "status": {{ $featured->status }},
+                                                                                    "payment_status": {{ $featured->payment_status }},
+                                                                                    "attribute_classes": {{ $featured->attribute_classes }},
                                                                                     "gallery": [
-                                                                                        { "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/modern-apartment-in-the-city-center-600x375.jpg", "alt": "" },
-                                                                                        { "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/warm-and-modern-studio-apartment-600x375.jpg", "alt": "" },
-                                                                                        { "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/two-storey-modern-flat-600x375.jpg", "alt": "" },
-                                                                                        { "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/minimalist-and-bright-flat-600x375.jpg", "alt": "" },
-                                                                                        { "image": "https:\/\/carmodyrealestates.com\/wp-content\/uploads\/2017\/01\/bright-and-sunny-flat-600x375.jpg", "alt": "" }
+                                                                                        { "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg", "alt": "" },
+                                                                                        { "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg", "alt": "" },
+                                                                                        { "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg", "alt": "" },
+                                                                                        { "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg", "alt": "" },
+                                                                                        { "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-and-sunny-flat-600x375.jpg", "alt": "" }
                                                                                     ],
-                                                                                    "date": "October 7, 2017",
+                                                                                    "date": {{ $featured->date }},
                                                                                     "price": [
-                                                                                        { "price": "$1.300.000", "is_range": false }
+                                                                                        { "price": {{ $featured->price }}, "is_range": false }
                                                                                     ]
                                                                                 }'>
                                                                             </compare-button>
                                                                         </div>
 
                                                                         <div class="mh-estate-vertical__buttons__single">
-                                                                            <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->name)}} title={{ $featured->name }} class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
+                                                                            <a href={{url("properties/".$featured->type.'/'.$featured->city.'/'.$featured->slug)}} title={{ $featured->name }} class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
                                                                                 Details
                                                                                 <span class="mdl-button__icon-right">
                                                                                     <i class="fas fa-angle-right"></i>
@@ -2100,14 +2099,14 @@
                                     @foreach($staffs as $staff)
                                     <div class="mh-agent mh-agent--white">
                                         <a href={{ url("agent/".$staff->slug) }} class="mh-agent__thumbnail"
-                                            title="Gary Carmody">
-                                            <img data-srcset={{ $staff->image }}
-                                                class="lazyload" data-sizes="auto" alt="Gary Carmody" />
+                                            title= {{ $staff->name }}>
+                                            <img data-srcset={{ $staff->image }} src={{ $staff->image }}
+                                                class="lazyload" data-sizes="auto" alt= {{ $staff->name }} />
                                         </a>
 
                                         <div class="mh-agent__content">
                                             <h3 class="mh-agent__heading">
-                                                <a href={{ url("agent/".$staff->slug) }} title="Gary Carmody">
+                                                <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}>
                                                     {{ $staff->name }}
                                                 </a>
                                             </h3>
@@ -2139,7 +2138,7 @@
 
                                             <div class="mh-agent__button-wrapper">
                                                 <div class="mh-agent__button">
-                                                    <a href={{ url("agent/".$staff->slug) }} title="Gary Carmody"
+                                                    <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}
                                                         class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
                                                         Full Profile
                                                     </a>
@@ -2178,13 +2177,13 @@
                                     @foreach($cities as $city)
                                         <div class="item">
                                             <div class="mh-box__content">
-                                                <a href={{url("city/".$city->slug)}} title={{$city->name}} class="mh-box">
+                                                <a href={{url("city/".$city->slug)}} title={{$city->city}} class="mh-box">
                                                     <span class="mh-box__img-wrapper">
-                                                        <img data-srcset={{$city->image}} src={{$city->name}} class="lazyload" data-sizes="auto" alt="New York" />
+                                                        <img data-srcset={{$city->image}} src={{$city->image}} class="lazyload" data-sizes="auto" alt={{$city->city}} />
                                                     </span>
                                                     <div class="mh-box__middle">
                                                         <h3 class="mh-box__title mh-heading mh-heading--style-3">
-                                                            {{$city->name}}
+                                                            {{$city->city}}
                                                         </h3>
                                                     </div>
                                                 </a>
@@ -2225,9 +2224,7 @@
                                             title={{ $blog->title}}
                                             class="mh-post-grid__thumbnail">
                                             <div class="mh-thumbnail__inner">
-                                                <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-120x75.jpg 120w, https://carmodyrealestates.com/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-848x530.jpg 848w, https://carmodyrealestates.com/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg 600w, https://carmodyrealestates.com/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-400x250.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-224x140.jpg 224w"
-                                                    class="lazyload" data-sizes="auto"
-                                                    alt={{ $blog->title}} />
+                                                <img data-srcset={{ $blog->image }} src={{ $blog->image }} class="lazyload" data-sizes="auto" alt={{ $blog->title }} />
                                             </div>
                                             <span class="mh-caption">
                                                 <span class="mh-caption__inner">{{$blog->date}}</span>
@@ -2237,7 +2234,7 @@
                                             <h3 class="mh-post-grid__heading">
                                                 <a href={{ url("blogs/".$blog->slug) }}
                                                     title={{ $blog->title}}>
-                                                    {{ $blog->title}}
+                                                    {{ $blog->title }}
                                                 </a>
                                             </h3>
                                             <div class="mh-post-grid__excerpt">
@@ -2299,8 +2296,8 @@
                                                     src="wp-content/uploads/2017/01/codecanyon.png"
                                                     class="attachment-full size-full wp-post-image" alt=""
                                                     srcset="
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/codecanyon.png        329w,
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/codecanyon-300x49.png 300w
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/codecanyon.png        329w,
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/codecanyon-300x49.png 300w
                                                         "
                                                     sizes="(max-width: 329px) 100vw, 329px" />
                                             </a>
@@ -2314,8 +2311,8 @@
                                                     src="wp-content/uploads/2017/01/graphicriver.png"
                                                     class="attachment-full size-full wp-post-image" alt=""
                                                     srcset="
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/graphicriver.png        332w,
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/graphicriver-300x70.png 300w
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/graphicriver.png        332w,
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/graphicriver-300x70.png 300w
                                                         "
                                                     sizes="(max-width: 332px) 100vw, 332px" />
                                             </a>
@@ -2329,8 +2326,8 @@
                                                     src="wp-content/uploads/2017/01/photodune.png"
                                                     class="attachment-full size-full wp-post-image" alt=""
                                                     srcset="
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/photodune.png        304w,
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/photodune-300x67.png 300w
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/photodune.png        304w,
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/photodune-300x67.png 300w
                                                         "
                                                     sizes="auto, (max-width: 304px) 100vw, 304px" />
                                             </a>
@@ -2344,8 +2341,8 @@
                                                     height="55" src="wp-content/uploads/2017/01/themeforest.png"
                                                     class="attachment-full size-full wp-post-image" alt=""
                                                     srcset="
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/themeforest.png        324w,
-                                                            https://carmodyrealestates.com/wp-content/uploads/2017/01/themeforest-300x51.png 300w
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/themeforest.png        324w,
+                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/themeforest-300x51.png 300w
                                                         "
                                                     sizes="auto, (max-width: 324px) 100vw, 324px" />
                                             </a>
@@ -2508,8 +2505,8 @@
         /* <![CDATA[ */
         var wpcf7 = {
             api: {
-                root: "https:\/\/carmodyrealestates.com\/wp-json\/",
-                namespace: "contact-form-7\/v1",
+                root: "http://127.0.0.1:8000/wp-json/",
+                namespace: "contact-form-7/v1",
             },
         };
         /* ]]> */

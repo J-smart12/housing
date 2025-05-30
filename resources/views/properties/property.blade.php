@@ -73,7 +73,7 @@
                 <div id="mega_main_menu"
                     class="mh-primary primary_style-flat icons-left first-lvl-align-left first-lvl-separator-none direction-horizontal fullwidth-disable pushing_content-disable mobile_minimized-enable dropdowns_trigger-hover dropdowns_animation-anim_4 no-logo no-search no-woo_cart no-buddypress responsive-enable coercive_styles-disable indefinite_location_mode-disable language_direction-ltr version-2-2-1-1 mh-primary primary_style-flat icons-left first-lvl-align-left first-lvl-separator-none direction-horizontal fullwidth-disable pushing_content-disable mobile_minimized-enable dropdowns_trigger-hover dropdowns_animation-anim_4 no-logo no-search no-woo_cart no-buddypress responsive-enable coercive_styles-disable indefinite_location_mode-disable language_direction-ltr version-2-2-1-1 mega_main mega_main_menu">
                     <div class="menu_holder">
-                        <div class="mmm_fullwidth_container"></div><!-- class="fullwidth_container" -->
+                        <div class="mmm_fullwidth_container"></div>
                         <div class="menu_inner"> <span class="nav_logo">
                                 <a class="mobile_toggle">
                                     <span class="mobile_button">

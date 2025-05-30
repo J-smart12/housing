@@ -8,6 +8,7 @@ use App\Models\SettingsModel;
 use App\Models\ClientTestimonials;
 use App\Models\CityModel;
 use App\Models\Blogs;
+use App\Models\User;
 
 class PropertyController extends Controller
 {
@@ -18,14 +19,16 @@ class PropertyController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
 
-     public function landing() {
+    public function landing() {
         $featureds = Properties::where('is_featured', true)->take(6)->get();
-        $settings = SettingsModel::where('id', 1)->get();
+        $settings = SettingsModel::where('id', 1)->first();
         $testimonials = ClientTestimonials::all();
         $cities = CityModel::all();
-        $blogs = Blogs::all();
-        return view('index', compact('settings', 'testimonials', 'featureds', 'cities', 'blogs'));
-     }
+        $blogs = Blogs::all(); 
+        $staffs = User::all();
+        // dd($settings);
+        return view('index', compact('settings', 'testimonials', 'featureds', 'cities', 'blogs', 'staffs'));
+    }
 
     public function index(Request $request)
     {
@@ -36,7 +39,6 @@ class PropertyController extends Controller
 
         // Base query with relationships
         $query = Properties::with([
-            'attributes.propertyAttribute',
             'gallery',
             'features',
             'offerType',
@@ -70,6 +72,8 @@ class PropertyController extends Controller
     public function property($type, $city, $slug) { 
         // fetch from database where name 
         $property = Properties::with(['galleries', 'features', 'offerTypes'])->where('slug', $slug)->first();
+        // $property = Properties::where('slug', $slug)->first();
+        // dd($property);
         return view('properties.property', compact('type', 'city', 'property'));
     }
 }
