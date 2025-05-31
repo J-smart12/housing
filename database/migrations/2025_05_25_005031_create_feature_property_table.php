@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('feature_property', function (Blueprint $table) {
             $table->foreignId('feature_id')->constrained()->onDelete('cascade');
-            $table->foreignId('property_id')->constrained()->onDelete('cascade');
-            $table->primary(['feature_id', 'property_id']);
+            $table->foreignId('properties_id')->constrained()->onDelete('cascade');
+            $table->primary(['feature_id', 'properties_id']);
         });
     }
 

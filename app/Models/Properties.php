@@ -43,9 +43,9 @@ class Properties extends Model
         return $this->belongsToMany(Feature::class, 'feature_property');
     }
 
-    public function offerTypes()
+    public function offerType()
     {
-        return $this->hasMany(OfferType::class);
+        return $this->belongsToMany(OfferType::class);
     }
 
     public function categories()

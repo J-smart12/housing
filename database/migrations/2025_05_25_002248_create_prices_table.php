@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('prices', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('property_id')->constrained()->onDelete('cascade');
+            $table->foreignId('properties_id')->constrained()->onDelete('cascade');
             $table->decimal('price', 12, 3);
             $table->boolean('is_range')->default(false);
             $table->timestamps();

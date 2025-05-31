@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('property_attributes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('property_id')->constrained()->onDelete('cascade');
+            $table->foreignId('properties_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('slug');
             $table->boolean('has_archive')->default(true);

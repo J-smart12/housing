@@ -9,9 +9,8 @@ use App\Http\Controllers\CityController;
 use App\Http\Controllers\DController;
 use App\Http\Controllers\FeaturesController;
 
-Route::get('api/properties', [PropertyController::class, 'index']);
-
 Route::get('/', [PropertyController::class, 'landing']);
+Route::get('/mh', [PropertyController::class, 'landing']);
 Route::get('/about-us', [PropertyController::class, 'about']);
 Route::get('/panel', [PropertyController::class, 'login']);
 

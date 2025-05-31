@@ -70,11 +70,16 @@ class PropertyController extends Controller
         $sortBy   = $request->query('sortBy', 'latest');
         $currency = $request->query('currency', 'any');
 
+        $property_type   = $request->query('property-type', 'apartment');
+        $offer_type   = $request->query('offer-type', 'rent');
+        $price_from   = $request->query('price_from', 1000);
+        $price_to   = $request->query('price_to', 10000000);
+
         // Base query with relationships
         $query = Properties::with([
             'galleries',
             // 'features',
-            // 'offerType',
+            'offerType',
             // 'price',
         ]);
 
@@ -82,15 +87,18 @@ class PropertyController extends Controller
         // Sort logic
         switch ($sortBy) {
             case 'popular':
-                $query->orderByDesc('views'); // assumes there's a `views` column
+                $query->orderByDesc('created_at');
+                break;
+            case 'newest':
+                $query->orderByDesc('created_at');
                 break;
             case 'latest':
                 $query->orderByDesc('created_at');
                 break;
-            case 'price_asc':
+            case 'priceLowToHigh':
                 $query->orderBy('price');
                 break;
-            case 'price_desc':
+            case 'priceHighToLow':
                 $query->orderByDesc('price');
                 break;
             default:
@@ -99,8 +107,14 @@ class PropertyController extends Controller
 
         // Paginate results
         $properties = $query->paginate($limit, ['*'], 'page', $page);
-
-        return response()->json($properties);
+        $res = response()->json($properties);
+        $tt = json_decode($res->content());
+        $ty = $tt->data;
+        // $ty['found_results'] = $tt->total;
+        return response()->json([
+            'results' => $ty,
+            'found_results' => $tt->total
+        ]);
     }
 
     public function all_properties(Request $request) { 

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('property_attribute_values', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('property_id')->constrained()->onDelete('cascade');
+            $table->foreignId('properties_id')->constrained()->onDelete('cascade');
             $table->foreignId('property_attribute_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('value')->nullable();

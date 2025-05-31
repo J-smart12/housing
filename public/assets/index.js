@@ -1,11 +1,11 @@
 var MyHome = {
     "site": "http://127.0.0.1:8000",
     "compare": "1",
-    "api": "http://127.0.0.1:8000/wp-json/myhome/v1/estates",
+    "api": "http://127.0.0.1:8000/api/properties",
     "panelUrl": "http://127.0.0.1:8000/panel/",
     "user_fields": [],
     "is_register_open": "",
-    "requestUrl": "http://127.0.0.1:8000/wp-admin/admin-ajax.php",
+    "requestUrl": "http://127.0.0.1:8000/admin/",
     "nonce": "69eb81400b",
     "mapStyle": "[{featureType:\"administrative\",elementType:\"labels.text.fill\",stylers:[{color:\"#444444\"}]},{featureType:\"landscape\",elementType:\"all\",stylers:[{color:\"#f2f2f2\"}]},{featureType:\"poi\",elementType:\"all\",stylers:[{visibility:\"off\"}]},{featureType:\"road\",elementType:\"all\",stylers:[{saturation:-100},{lightness:45}]},{featureType:\"road.highway\",elementType:\"all\",stylers:[{visibility:\"simplified\"}]},{featureType:\"road.arterial\",elementType:\"labels.icon\",stylers:[{visibility:\"off\"}]},{featureType:\"transit\",elementType:\"all\",stylers:[{visibility:\"off\"}]},{featureType:\"water\",elementType:\"all\",stylers:[{color:\"#d7e1f2\"},{visibility:\"on\"}]}]",
     "mapType": "roadmap",
@@ -117,7 +117,7 @@ var MyHome = {
     "theme_url": "http://127.0.0.1:8000/wp-content/themes/myhome"
 };
 var MyHomeListing1747769060 = {
-    "api_endpoint": "http://127.0.0.1:8000/wp-json/myhome/v1/estates",
+    "api_endpoint": "http://127.0.0.1:8000/api/properties",
     "search_form_position": "top",
     "label": "",
     "listing_default_view": "colThree",
@@ -141,1747 +141,390 @@ var MyHomeListing1747769060 = {
     "show_sort_by_price_low_to_high": "1",
     "show_sort_by_alphabetically": "",
     "hide_save_search": "",
-    "initial_results": "1",
+    "initial_results": "6",
     "results": {
         "estates": [
         {
-            "id": 113,
-            "name": "Modern apartment in the city center",
-            "slug": "modern-apartment-in-the-city-center",
-            "excerpt": "Property overview\r\n3 bedroom flat , with all utilities and POOL already in! Gorgeous and secluded lot with panoramic views...",
-            "link": "http://127.0.0.1:8000/properties/apartment/chicago/modern-apartment-in-the-city-center/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-848x530.jpg 848w, http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg 600w, http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-400x250.jpg 400w, http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center.jpg",
-            "attributes": [
-            {
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "Apartment",
-                    "value": "Apartment",
-                    "link": "http://127.0.0.1:8000/property-type/apartment/",
-                    "slug": "apartment",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
-                    }
-                }, {
-                    "name": "Open House",
-                    "value": "Open House",
-                    "link": "http://127.0.0.1:8000/offer-type/open-house/",
-                    "slug": "open-house",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#00a587",
-                        "color": "#ffffff"
-                    }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "Chicago",
-                    "value": "Chicago",
-                    "link": "http://127.0.0.1:8000/city/chicago/",
-                    "slug": "chicago",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Wicker Park",
-                    "value": "Wicker Park",
-                    "link": "http://127.0.0.1:8000/neighborhood/wicker-park/",
-                    "slug": "wicker-park",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "CH Wicker Park Street #1",
-                    "value": "CH Wicker Park Street #1",
-                    "link": "http://127.0.0.1:8000/street/ch-wicker-park-street-1/",
-                    "slug": "ch-wicker-park-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "3",
-                    "value": "3",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "2",
-                    "value": "2",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "1100 ft\u00b2",
-                    "value": "1100",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "2007",
-                    "value": "2007",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Attic",
-                    "value": "Attic",
-                    "link": "http://127.0.0.1:8000/features/attic/",
-                    "slug": "attic",
-                    "options": []
-                }, {
-                    "name": "Dishwasher",
-                    "value": "Dishwasher",
-                    "link": "http://127.0.0.1:8000/features/dishwasher/",
-                    "slug": "dishwasher",
-                    "options": []
-                }, {
-                    "name": "Fireplace",
-                    "value": "Fireplace",
-                    "link": "http://127.0.0.1:8000/features/fireplace/",
-                    "slug": "fireplace",
-                    "options": []
-                }, {
-                    "name": "Garden",
-                    "value": "Garden",
-                    "link": "http://127.0.0.1:8000/features/garden/",
-                    "slug": "garden",
-                    "options": []
-                }, {
-                    "name": "Gym",
-                    "value": "Gym",
-                    "link": "http://127.0.0.1:8000/features/gym/",
-                    "slug": "gym",
-                    "options": []
-                }, {
-                    "name": "High ceilings",
-                    "value": "High ceilings",
-                    "link": "http://127.0.0.1:8000/features/high-ceilings/",
-                    "slug": "high-ceilings",
-                    "options": []
-                }, {
-                    "name": "Microwave",
-                    "value": "Microwave",
-                    "link": "http://127.0.0.1:8000/features/microwave/",
-                    "slug": "microwave",
-                    "options": []
-                }, {
-                    "name": "Patio",
-                    "value": "Patio",
-                    "link": "http://127.0.0.1:8000/features/patio/",
-                    "slug": "patio",
-                    "options": []
-                }, {
-                    "name": "Swimming Pool",
-                    "value": "Swimming Pool",
-                    "link": "http://127.0.0.1:8000/features/swimming-pool/",
-                    "slug": "swimming-pool",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "122-140 N Morgan St, Chicago, IL 60607, USA",
-            "days_ago": "8 years ago",
-            "is_featured": true,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
-                }
-            }, {
-                "name": "Open House",
-                "value": "Open House",
-                "link": "http://127.0.0.1:8000/offer-type/open-house/",
-                "slug": "open-house",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#00a587",
-                    "color": "#ffffff"
-                }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__apartment mh-attribute-offer-type__sale mh-attribute-offer-type__open-house mh-attribute-city__chicago mh-attribute-neighborhood__wicker-park mh-attribute-street__ch-wicker-park-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-features__attic mh-attribute-features__dishwasher mh-attribute-features__fireplace mh-attribute-features__garden mh-attribute-features__gym mh-attribute-features__high-ceilings mh-attribute-features__microwave mh-attribute-features__patio mh-attribute-features__swimming-pool",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-and-sunny-flat-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 7, 2017",
-            "price": [{
-                "price": "$1.300.000",
-                "is_range": false
-            }]
-        }, 
-        {
-            "id": 94,
-            "name": "Minimalist and bright flat",
-            "slug": "minimalist-and-bright-flat",
-            "excerpt": "Enveloped in the lush landscape and bound by the masterful vision of icons in quality and thoughtful execution, award-winn...",
-            "link": "http://127.0.0.1:8000/properties/apartment/new-york/minimalist-and-bright-flat/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-848x530.jpg 848w, http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg 600w, http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-400x250.jpg 400w, http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat.jpg",
-            "attributes": [
+            "id": 19,
+            "name": "Klein Ways",
+            "slug": "klein-ways-2wgii",
+            "user_id": 7,
+            "excerpt": "Sunt aut consequuntur ipsum et delectus quo.",
+            "link": "http:\/\/www.harber.com\/qui-occaecati-quia-alias-aliquid",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/001144?text=quibusdam",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/00eecc?text=consequatur",
+            "address": "894 Patrick Union\nMaybelleborough, WA 59022",
+            "neighborhood": "fugiat",
+            "street": "Kreiger Path",
+            "details": "Qui a voluptatem illum dolor cupiditate. Impedit blanditiis voluptas ipsum doloribus.",
+            "date_listed": "2023-03-14",
+            "days_ago": "18 days ago",
+            "type": "Apartment",
+            "label": "dignissimos",
+            "plan1": "vel",
+            "plan2": "quo",
+            "city": "Antoniettaborough",
+            "is_featured": 0,
+            "status": "pending",
+            "payment_status": "unpaid",
+            "attribute_classes": "natus molestiae non",
+            "property_size": 248,
+            "date": "1972-04-19",
+            "price": "929706.135",
+            "created_at": "2025-05-31T05:24:08.000000Z",
+            "updated_at": "2025-05-31T05:24:08.000000Z",
+            "galleries": [
                 {
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "Apartment",
-                    "value": "Apartment",
-                    "link": "http://127.0.0.1:8000/property-type/apartment/",
-                    "slug": "apartment",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
-                    }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "New York",
-                    "value": "New York",
-                    "link": "http://127.0.0.1:8000/city/new-york/",
-                    "slug": "new-york",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Chinatown",
-                    "value": "Chinatown",
-                    "link": "http://127.0.0.1:8000/neighborhood/chinatown/",
-                    "slug": "chinatown",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "NY Chinatown Street #1",
-                    "value": "NY Chinatown Street #1",
-                    "link": "http://127.0.0.1:8000/street/ny-chinatown-street-1/",
-                    "slug": "ny-chinatown-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "3",
-                    "value": "3",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "2",
-                    "value": "2",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "1700 ft\u00b2",
-                    "value": "1700",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "2017",
-                    "value": "2017",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Air Conditioning",
-                    "value": "Air Conditioning",
-                    "link": "http://127.0.0.1:8000/features/air-conditioning/",
-                    "slug": "air-conditioning",
-                    "options": []
-                }, {
-                    "name": "Fireplace",
-                    "value": "Fireplace",
-                    "link": "http://127.0.0.1:8000/features/fireplace/",
-                    "slug": "fireplace",
-                    "options": []
-                }, {
-                    "name": "High ceilings",
-                    "value": "High ceilings",
-                    "link": "http://127.0.0.1:8000/features/high-ceilings/",
-                    "slug": "high-ceilings",
-                    "options": []
-                }, {
-                    "name": "Laundry",
-                    "value": "Laundry",
-                    "link": "http://127.0.0.1:8000/features/laundry/",
-                    "slug": "laundry",
-                    "options": []
-                }, {
-                    "name": "Porch",
-                    "value": "Porch",
-                    "link": "http://127.0.0.1:8000/features/porch/",
-                    "slug": "porch",
-                    "options": []
-                }, {
-                    "name": "Sauna",
-                    "value": "Sauna",
-                    "link": "http://127.0.0.1:8000/features/sauna/",
-                    "slug": "sauna",
-                    "options": []
-                }, {
-                    "name": "Swimming Pool",
-                    "value": "Swimming Pool",
-                    "link": "http://127.0.0.1:8000/features/swimming-pool/",
-                    "slug": "swimming-pool",
-                    "options": []
-                }, {
-                    "name": "TV Cable",
-                    "value": "TV Cable",
-                    "link": "http://127.0.0.1:8000/features/tv-cable/",
-                    "slug": "tv-cable",
-                    "options": []
-                }, {
-                    "name": "WiFi",
-                    "value": "WiFi",
-                    "link": "http://127.0.0.1:8000/features/wifi/",
-                    "slug": "wifi",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "518-520 8th Ave, New York, NY 10018, USA",
-            "days_ago": "8 years ago",
-            "is_featured": false,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0055dd?text=house+labore",
+                    "alt": "Expedita eveniet placeat officia."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/003333?text=house+aut",
+                    "alt": "Maiores in."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/00ffdd?text=house+veniam",
+                    "alt": "Et voluptatem eaque."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0033ff?text=house+velit",
+                    "alt": "Laboriosam tempore ad aut."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/004499?text=house+quisquam",
+                    "alt": "Dignissimos numquam in ut."
                 }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__apartment mh-attribute-offer-type__sale mh-attribute-city__new-york mh-attribute-neighborhood__chinatown mh-attribute-street__ny-chinatown-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-features__air-conditioning mh-attribute-features__fireplace mh-attribute-features__high-ceilings mh-attribute-features__laundry mh-attribute-features__porch mh-attribute-features__sauna mh-attribute-features__swimming-pool mh-attribute-features__tv-cable mh-attribute-features__wifi",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 7, 2017",
-            "price": [{
-                "price": "$850.000",
-                "is_range": false
-            }]
-        }, {
-            "id": 129,
-            "name": "Bright apartment",
-            "slug": "bright-apartment",
-            "excerpt": "A masterpiece of artful design nestled in the secluded hills of Bel Air, this one-of-a kind, breathtaking home immediately...",
-            "link": "http://127.0.0.1:8000/properties/apartment/los-angeles/bright-apartment/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-848x530.jpg 848w, http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-600x375.jpg 600w, http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-400x250.jpg 400w, http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment.jpg",
-            "attributes": [{
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "Apartment",
-                    "value": "Apartment",
-                    "link": "http://127.0.0.1:8000/property-type/apartment/",
-                    "slug": "apartment",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
+            ],
+            "offer_type": [
+                {
+                    "id": 3,
+                    "name": "Error suscipit",
+                    "slug": "error-suscipit",
+                    "value": "error_suscipit",
+                    "has_label": 0,
+                    "link": null,
+                    "bg_color": "#0099cc",
+                    "color": "#0077bb",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 19,
+                        "offer_type_id": 3
                     }
-                }, {
-                    "name": "No Fees!",
-                    "value": "No Fees!",
-                    "link": "http://127.0.0.1:8000/offer-type/no-fees/",
-                    "slug": "no-fees",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#f9940f",
-                        "color": "#ffffff"
+                },
+                {
+                    "id": 6,
+                    "name": "Et corporis",
+                    "slug": "et-corporis",
+                    "value": "et_corporis",
+                    "has_label": 0,
+                    "link": "http:\/\/buckridge.com\/",
+                    "bg_color": "#00bbee",
+                    "color": "#00eecc",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 19,
+                        "offer_type_id": 6
                     }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "Los Angeles",
-                    "value": "Los Angeles",
-                    "link": "http://127.0.0.1:8000/city/los-angeles/",
-                    "slug": "los-angeles",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Venice",
-                    "value": "Venice",
-                    "link": "http://127.0.0.1:8000/neighborhood/venice/",
-                    "slug": "venice",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "LA Venice Street #1",
-                    "value": "LA Venice Street #1",
-                    "link": "http://127.0.0.1:8000/street/la-venice-street-1/",
-                    "slug": "la-venice-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "3",
-                    "value": "3",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "2",
-                    "value": "2",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "2000 ft\u00b2",
-                    "value": "2000",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "2003",
-                    "value": "2003",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Balcony",
-                    "value": "Balcony",
-                    "link": "http://127.0.0.1:8000/features/balcony/",
-                    "slug": "balcony",
-                    "options": []
-                }, {
-                    "name": "Dishwasher",
-                    "value": "Dishwasher",
-                    "link": "http://127.0.0.1:8000/features/dishwasher/",
-                    "slug": "dishwasher",
-                    "options": []
-                }, {
-                    "name": "Fireplace",
-                    "value": "Fireplace",
-                    "link": "http://127.0.0.1:8000/features/fireplace/",
-                    "slug": "fireplace",
-                    "options": []
-                }, {
-                    "name": "Garden",
-                    "value": "Garden",
-                    "link": "http://127.0.0.1:8000/features/garden/",
-                    "slug": "garden",
-                    "options": []
-                }, {
-                    "name": "Hot Tub",
-                    "value": "Hot Tub",
-                    "link": "http://127.0.0.1:8000/features/hot-tub/",
-                    "slug": "hot-tub",
-                    "options": []
-                }, {
-                    "name": "Laundry",
-                    "value": "Laundry",
-                    "link": "http://127.0.0.1:8000/features/laundry/",
-                    "slug": "laundry",
-                    "options": []
-                }, {
-                    "name": "Porch",
-                    "value": "Porch",
-                    "link": "http://127.0.0.1:8000/features/porch/",
-                    "slug": "porch",
-                    "options": []
-                }, {
-                    "name": "Sauna",
-                    "value": "Sauna",
-                    "link": "http://127.0.0.1:8000/features/sauna/",
-                    "slug": "sauna",
-                    "options": []
-                }, {
-                    "name": "Security System",
-                    "value": "Security System",
-                    "link": "http://127.0.0.1:8000/features/security-system/",
-                    "slug": "security-system",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "333-399 N Mission Rd, Los Angeles, CA 90033, USA",
-            "days_ago": "8 years ago",
-            "is_featured": false,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
                 }
-            }, {
-                "name": "No Fees!",
-                "value": "No Fees!",
-                "link": "http://127.0.0.1:8000/offer-type/no-fees/",
-                "slug": "no-fees",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#f9940f",
-                    "color": "#ffffff"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Durgan Place",
+            "slug": "durgan-place-cl3rt",
+            "user_id": 2,
+            "excerpt": "Et non molestiae natus nihil minus atque.",
+            "link": "http:\/\/www.dooley.com\/",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/00eeaa?text=ut",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/00bb88?text=magnam",
+            "address": "41587 Halvorson Ports\nLake Charityshire, WA 11937",
+            "neighborhood": "mollitia",
+            "street": "Keeley Tunnel",
+            "details": "Soluta quam ipsam unde debitis qui est. Dolorem aliquid iste nulla et dolorem et facere dolorum. Odit recusandae blanditiis aut ipsum. Tenetur ut molestiae sed officia aliquam nam. Ea et dolores vel sed aperiam.",
+            "date_listed": "2009-08-31",
+            "days_ago": "7 days ago",
+            "type": "Duplex",
+            "label": "officia",
+            "plan1": "repudiandae",
+            "plan2": "placeat",
+            "city": "Paytonmouth",
+            "is_featured": 0,
+            "status": "available",
+            "payment_status": "unpaid",
+            "attribute_classes": "accusamus officia rerum",
+            "property_size": 213,
+            "date": "2015-05-12",
+            "price": "717876.570",
+            "created_at": "2025-05-31T05:24:08.000000Z",
+            "updated_at": "2025-05-31T05:24:08.000000Z",
+            "galleries": [
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/00ffff?text=house+quidem",
+                    "alt": "Eaque et consequuntur suscipit."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0099bb?text=house+reprehenderit",
+                    "alt": "Consequatur in aspernatur ea."
                 }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__apartment mh-attribute-offer-type__sale mh-attribute-offer-type__no-fees mh-attribute-city__los-angeles mh-attribute-neighborhood__venice mh-attribute-street__la-venice-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-features__balcony mh-attribute-features__dishwasher mh-attribute-features__fireplace mh-attribute-features__garden mh-attribute-features__hot-tub mh-attribute-features__laundry mh-attribute-features__porch mh-attribute-features__sauna mh-attribute-features__security-system",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-and-sunny-flat-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 7, 2017",
-            "price": [{
-                "price": "$2.300.000",
-                "is_range": false
-            }]
-        }, {
-            "id": 72,
-            "name": "Two storey modern flat",
-            "slug": "two-storey-modern-flat",
-            "excerpt": "Inspired by its riverside surroundings, The Levee will incorporate four connected developments built on a peninsula\u2019s end ...",
-            "link": "http://127.0.0.1:8000/properties/house/los-angeles/two-storey-modern-flat/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/10/download-2-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/10/download-2-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/10/download-2.jpg",
-            "attributes": [{
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "House",
-                    "value": "House",
-                    "link": "http://127.0.0.1:8000/property-type/house/",
-                    "slug": "house",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
+            ],
+            "offer_type": []
+        },
+        {
+            "id": 1,
+            "name": "Bartoletti Shores",
+            "slug": "bartoletti-shores-z6wkv",
+            "user_id": 3,
+            "excerpt": "Sequi id voluptatum consequatur veniam aliquam sint.",
+            "link": "http:\/\/gislason.biz\/et-sint-ea-dolorem-ad-aspernatur-consequuntur-id.html",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/004422?text=error",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/007744?text=consequuntur",
+            "address": "22205 Griffin Ways Suite 876\nWest Enricoberg, MI 05962",
+            "neighborhood": "architecto",
+            "street": "Amara Oval",
+            "details": "Ducimus blanditiis laboriosam similique aut maiores et id. Culpa maiores omnis rerum id. Rerum odit et id. Commodi nobis omnis velit natus earum molestiae.",
+            "date_listed": "2007-09-12",
+            "days_ago": "9 days ago",
+            "type": "Duplex",
+            "label": "quos",
+            "plan1": "nemo",
+            "plan2": "recusandae",
+            "city": "New Brandon",
+            "is_featured": 1,
+            "status": "sold",
+            "payment_status": "unpaid",
+            "attribute_classes": "assumenda rerum optio",
+            "property_size": 480,
+            "date": "1995-09-27",
+            "price": "381857.378",
+            "created_at": "2025-05-31T05:24:07.000000Z",
+            "updated_at": "2025-05-31T05:24:07.000000Z",
+            "galleries": [
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/003355?text=house+eaque",
+                    "alt": "Reprehenderit totam repellendus quae esse."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/004477?text=house+facilis",
+                    "alt": "Consequatur rem nesciunt enim."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0000bb?text=house+expedita",
+                    "alt": "Animi quo sed."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/001177?text=house+quod",
+                    "alt": "Ullam tenetur velit."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0044aa?text=house+aut",
+                    "alt": "Nesciunt similique neque."
+                }
+            ],
+            "offer_type": [
+                {
+                    "id": 5,
+                    "name": "Quia ratione",
+                    "slug": "quia-ratione",
+                    "value": "quia_ratione",
+                    "has_label": 1,
+                    "link": "http:\/\/www.ankunding.org\/cupiditate-quam-nemo-nihil-qui-repellat.html",
+                    "bg_color": "#00ccff",
+                    "color": "#0066dd",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 1,
+                        "offer_type_id": 5
                     }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "Los Angeles",
-                    "value": "Los Angeles",
-                    "link": "http://127.0.0.1:8000/city/los-angeles/",
-                    "slug": "los-angeles",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Soho",
-                    "value": "Soho",
-                    "link": "http://127.0.0.1:8000/neighborhood/soho/",
-                    "slug": "soho",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "NY Soho Street #1",
-                    "value": "NY Soho Street #1",
-                    "link": "http://127.0.0.1:8000/street/ny-soho-street-1/",
-                    "slug": "ny-soho-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "3",
-                    "value": "3",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "4",
-                    "value": "4",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "1600 ft\u00b2",
-                    "value": "1600",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "2021",
-                    "value": "2021",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Balcony",
-                    "value": "Balcony",
-                    "link": "http://127.0.0.1:8000/features/balcony/",
-                    "slug": "balcony",
-                    "options": []
-                }, {
-                    "name": "Ceiling Fan",
-                    "value": "Ceiling Fan",
-                    "link": "http://127.0.0.1:8000/features/ceiling-fan/",
-                    "slug": "ceiling-fan",
-                    "options": []
-                }, {
-                    "name": "Dishwasher",
-                    "value": "Dishwasher",
-                    "link": "http://127.0.0.1:8000/features/dishwasher/",
-                    "slug": "dishwasher",
-                    "options": []
-                }, {
-                    "name": "Garbage disposal",
-                    "value": "Garbage disposal",
-                    "link": "http://127.0.0.1:8000/features/garbage-disposal/",
-                    "slug": "garbage-disposal",
-                    "options": []
-                }, {
-                    "name": "High ceilings",
-                    "value": "High ceilings",
-                    "link": "http://127.0.0.1:8000/features/high-ceilings/",
-                    "slug": "high-ceilings",
-                    "options": []
-                }, {
-                    "name": "Laundry",
-                    "value": "Laundry",
-                    "link": "http://127.0.0.1:8000/features/laundry/",
-                    "slug": "laundry",
-                    "options": []
-                }, {
-                    "name": "Microwave",
-                    "value": "Microwave",
-                    "link": "http://127.0.0.1:8000/features/microwave/",
-                    "slug": "microwave",
-                    "options": []
-                }, {
-                    "name": "Refrigerator",
-                    "value": "Refrigerator",
-                    "link": "http://127.0.0.1:8000/features/refrigerator/",
-                    "slug": "refrigerator",
-                    "options": []
-                }, {
-                    "name": "TV Cable",
-                    "value": "TV Cable",
-                    "link": "http://127.0.0.1:8000/features/tv-cable/",
-                    "slug": "tv-cable",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "65-4 68th Ave, Ridgewood, NY 11385, USA",
-            "days_ago": "8 years ago",
-            "is_featured": false,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
                 }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__house mh-attribute-offer-type__sale mh-attribute-city__los-angeles mh-attribute-neighborhood__soho mh-attribute-street__ny-soho-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-features__balcony mh-attribute-features__ceiling-fan mh-attribute-features__dishwasher mh-attribute-features__garbage-disposal mh-attribute-features__high-ceilings mh-attribute-features__laundry mh-attribute-features__microwave mh-attribute-features__refrigerator mh-attribute-features__tv-cable",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-apartment-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 7, 2017",
-            "price": [{
-                "price": "$500",
-                "is_range": false
-            }]
-        }, {
-            "id": 92,
-            "name": "Place perfect for nature lovers",
-            "slug": "place-perfect-for-nature-lovers",
-            "excerpt": "Flawlessly executed, an estate of ultimate exclusivity on nearly an acre of privately-gated land, this trophy property was...",
-            "link": "http://127.0.0.1:8000/properties/house/chicago/place-perfect-for-nature-lovers/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-848x530.jpg 848w, http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-600x375.jpg 600w, http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-400x250.jpg 400w, http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers.jpg",
-            "attributes": [{
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "House",
-                    "value": "House",
-                    "link": "http://127.0.0.1:8000/property-type/house/",
-                    "slug": "house",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Kelly Rapids",
+            "slug": "kelly-rapids-t1xd9",
+            "user_id": 7,
+            "excerpt": "Nobis ut qui dolor omnis ipsam et libero ipsum.",
+            "link": "http:\/\/www.nicolas.net\/dolores-eum-suscipit-quod-et.html",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/007799?text=eaque",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/00dd44?text=perferendis",
+            "address": "2051 Ankunding Court\nVonberg, WY 55493",
+            "neighborhood": "est",
+            "street": "Cecilia Corner",
+            "details": "Maxime doloribus doloremque vel sed et. Eligendi vitae aut qui est eligendi est. Et temporibus labore nam reiciendis autem ullam. Accusantium non sint et ut ut cumque. Voluptatum numquam ea suscipit rerum culpa.",
+            "date_listed": "1992-01-11",
+            "days_ago": "25 days ago",
+            "type": "Apartment",
+            "label": "aut",
+            "plan1": "consequatur",
+            "plan2": "qui",
+            "city": "North Rosendo",
+            "is_featured": 1,
+            "status": "pending",
+            "payment_status": "paid",
+            "attribute_classes": "soluta assumenda et",
+            "property_size": 417,
+            "date": "2020-02-15",
+            "price": "118093.633",
+            "created_at": "2025-05-31T05:24:07.000000Z",
+            "updated_at": "2025-05-31T05:24:07.000000Z",
+            "galleries": [
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0044cc?text=house+eius",
+                    "alt": "Consequatur vero quisquam."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0044aa?text=house+magnam",
+                    "alt": "Dolor ipsam facere est."
+                }
+            ],
+            "offer_type": []
+        },
+        {
+            "id": 3,
+            "name": "Otis Haven",
+            "slug": "otis-haven-gdfkx",
+            "user_id": 7,
+            "excerpt": "Ea rerum eos ut aut omnis sed.",
+            "link": "http:\/\/cummerata.com\/id-necessitatibus-est-recusandae-sunt-provident-accusamus",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/006611?text=distinctio",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/000066?text=veritatis",
+            "address": "9309 Rita Course Apt. 331\nTremblayland, IL 28839",
+            "neighborhood": "maxime",
+            "street": "Travis Pines",
+            "details": "Rerum aut et velit nesciunt quasi. Labore soluta quae totam quod. Maiores sunt dolorem impedit et rem sequi dicta.",
+            "date_listed": "2015-06-15",
+            "days_ago": "13 days ago",
+            "type": "Villa",
+            "label": "qui",
+            "plan1": "commodi",
+            "plan2": "ipsum",
+            "city": "West Cristobalton",
+            "is_featured": 0,
+            "status": "available",
+            "payment_status": "unpaid",
+            "attribute_classes": "dolorem expedita commodi",
+            "property_size": 209,
+            "date": "2009-09-17",
+            "price": "618861.197",
+            "created_at": "2025-05-31T05:24:07.000000Z",
+            "updated_at": "2025-05-31T05:24:07.000000Z",
+            "galleries": [
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/005555?text=house+ut",
+                    "alt": "Voluptatem eius dolorem."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/00ff11?text=house+omnis",
+                    "alt": "Perspiciatis soluta cupiditate eum."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/0099cc?text=house+quis",
+                    "alt": "Voluptate molestiae aut."
+                }
+            ],
+            "offer_type": [
+                {
+                    "id": 6,
+                    "name": "Et corporis",
+                    "slug": "et-corporis",
+                    "value": "et_corporis",
+                    "has_label": 0,
+                    "link": "http:\/\/buckridge.com\/",
+                    "bg_color": "#00bbee",
+                    "color": "#00eecc",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 3,
+                        "offer_type_id": 6
                     }
-                }, {
-                    "name": "Hot Offer!",
-                    "value": "Hot Offer!",
-                    "link": "http://127.0.0.1:8000/offer-type/hot-offer/",
-                    "slug": "hot-offer",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#cc2014",
-                        "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Parisian Turnpike",
+            "slug": "parisian-turnpike-k3n0h",
+            "user_id": 1,
+            "excerpt": "Dicta quae quae aut aut iure vero.",
+            "link": "http:\/\/jakubowski.com\/",
+            "image_srcset": "https:\/\/via.placeholder.com\/640x480.png\/00ee11?text=eveniet",
+            "image": "https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=ea",
+            "address": "61250 Ruthie Cliffs\nKundechester, OK 93279-3243",
+            "neighborhood": "suscipit",
+            "street": "Ila Squares",
+            "details": "Molestias sint sequi velit. Pariatur praesentium rerum dolorem velit. A porro ut eligendi consectetur provident officia necessitatibus velit.",
+            "date_listed": "2000-12-24",
+            "days_ago": "8 days ago",
+            "type": "Villa",
+            "label": "non",
+            "plan1": "ea",
+            "plan2": "excepturi",
+            "city": "Lake Dudley",
+            "is_featured": 1,
+            "status": "sold",
+            "payment_status": "unpaid",
+            "attribute_classes": "rem odit et",
+            "property_size": 50,
+            "date": "2007-08-12",
+            "price": "638694.615",
+            "created_at": "2025-05-31T05:24:07.000000Z",
+            "updated_at": "2025-05-31T05:24:07.000000Z",
+            "galleries": [
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/009966?text=house+quisquam",
+                    "alt": "Et voluptatem dolor sunt hic."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/00aaff?text=house+corporis",
+                    "alt": "Eos odit."
+                },
+                {
+                    "image": "https:\/\/via.placeholder.com\/800x600.png\/00dd77?text=house+placeat",
+                    "alt": "Voluptatum quasi amet."
+                }
+            ],
+            "offer_type": [
+                {
+                    "id": 4,
+                    "name": "Ut perferendis",
+                    "slug": "ut-perferendis",
+                    "value": "ut_perferendis",
+                    "has_label": 0,
+                    "link": null,
+                    "bg_color": "#0000dd",
+                    "color": "#00ffdd",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 4,
+                        "offer_type_id": 4
                     }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "Chicago",
-                    "value": "Chicago",
-                    "link": "http://127.0.0.1:8000/city/chicago/",
-                    "slug": "chicago",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Englewood",
-                    "value": "Englewood",
-                    "link": "http://127.0.0.1:8000/neighborhood/englewood/",
-                    "slug": "englewood",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "CH Englewood Street #1",
-                    "value": "CH Englewood Street #1",
-                    "link": "http://127.0.0.1:8000/street/ch-englewood-street-1/",
-                    "slug": "ch-englewood-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "4",
-                    "value": "4",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "2",
-                    "value": "2",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "2100 ft\u00b2",
-                    "value": "2100",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "1996",
-                    "value": "1996",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "3000 ft\u00b2",
-                    "value": "3000",
-                    "link": "",
-                    "slug": "lot-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Barbecue",
-                    "value": "Barbecue",
-                    "link": "http://127.0.0.1:8000/features/barbecue/",
-                    "slug": "barbecue",
-                    "options": []
-                }, {
-                    "name": "Contemporary architecture",
-                    "value": "Contemporary architecture",
-                    "link": "http://127.0.0.1:8000/features/contemporary-architecture/",
-                    "slug": "contemporary-architecture",
-                    "options": []
-                }, {
-                    "name": "Dryer",
-                    "value": "Dryer",
-                    "link": "http://127.0.0.1:8000/features/dryer/",
-                    "slug": "dryer",
-                    "options": []
-                }, {
-                    "name": "Garden",
-                    "value": "Garden",
-                    "link": "http://127.0.0.1:8000/features/garden/",
-                    "slug": "garden",
-                    "options": []
-                }, {
-                    "name": "Lawn",
-                    "value": "Lawn",
-                    "link": "http://127.0.0.1:8000/features/lawn/",
-                    "slug": "lawn",
-                    "options": []
-                }, {
-                    "name": "Microwave",
-                    "value": "Microwave",
-                    "link": "http://127.0.0.1:8000/features/microwave/",
-                    "slug": "microwave",
-                    "options": []
-                }, {
-                    "name": "Porch",
-                    "value": "Porch",
-                    "link": "http://127.0.0.1:8000/features/porch/",
-                    "slug": "porch",
-                    "options": []
-                }, {
-                    "name": "Refrigerator",
-                    "value": "Refrigerator",
-                    "link": "http://127.0.0.1:8000/features/refrigerator/",
-                    "slug": "refrigerator",
-                    "options": []
-                }, {
-                    "name": "TV Cable",
-                    "value": "TV Cable",
-                    "link": "http://127.0.0.1:8000/features/tv-cable/",
-                    "slug": "tv-cable",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "318-330 S Oakley Blvd, Chicago, IL 60612, USA",
-            "days_ago": "8 years ago",
-            "is_featured": false,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
-                }
-            }, {
-                "name": "Hot Offer!",
-                "value": "Hot Offer!",
-                "link": "http://127.0.0.1:8000/offer-type/hot-offer/",
-                "slug": "hot-offer",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#cc2014",
-                    "color": "#ffffff"
-                }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__house mh-attribute-offer-type__sale mh-attribute-offer-type__hot-offer mh-attribute-city__chicago mh-attribute-neighborhood__englewood mh-attribute-street__ch-englewood-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-lot-size__lot-size mh-attribute-features__barbecue mh-attribute-features__contemporary-architecture mh-attribute-features__dryer mh-attribute-features__garden mh-attribute-features__lawn mh-attribute-features__microwave mh-attribute-features__porch mh-attribute-features__refrigerator mh-attribute-features__tv-cable",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/place-perfect-for-nature-lovers-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/bright-and-sunny-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 6, 2017",
-            "price": [{
-                "price": "$670.000",
-                "is_range": false
-            }]
-        }, {
-            "id": 125,
-            "name": "Summer house with a pole",
-            "slug": "summer-house-with-a-pole",
-            "excerpt": "One of the most significant properties in exclusive guard gated community of Moraga Estates. Rarely does a home of this qu...",
-            "link": "http://127.0.0.1:8000/properties/house/new-york/summer-house-with-a-pole/",
-            "has_price": true,
-            "image_srcset": "http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-120x75.jpg 120w, http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-848x530.jpg 848w, http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-600x375.jpg 600w, http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-400x250.jpg 400w, http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-224x140.jpg 224w",
-            "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole.jpg",
-            "attributes": [{
-                "name": "Property type",
-                "slug": "property-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "House",
-                    "value": "House",
-                    "link": "http://127.0.0.1:8000/property-type/house/",
-                    "slug": "house",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Offer type",
-                "slug": "offer-type",
-                "has_archive": true,
-                "values": [{
-                    "name": "For Sale",
-                    "value": "For Sale",
-                    "link": "http://127.0.0.1:8000/offer-type/sale/",
-                    "slug": "sale",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#29aae3",
-                        "color": "#fff"
+                },
+                {
+                    "id": 8,
+                    "name": "Aspernatur totam",
+                    "slug": "aspernatur-totam",
+                    "value": "aspernatur_totam",
+                    "has_label": 1,
+                    "link": null,
+                    "bg_color": "#003355",
+                    "color": "#0044aa",
+                    "created_at": "2025-05-31T05:24:15.000000Z",
+                    "updated_at": "2025-05-31T05:24:15.000000Z",
+                    "pivot": {
+                        "properties_id": 4,
+                        "offer_type_id": 8
                     }
-                }, {
-                    "name": "Sold!",
-                    "value": "Sold!",
-                    "link": "http://127.0.0.1:8000/offer-type/sold/",
-                    "slug": "sold",
-                    "options": {
-                        "has_label": true,
-                        "bg_color": "#222222",
-                        "color": "#ffffff"
-                    }
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "City",
-                "slug": "city",
-                "has_archive": true,
-                "values": [{
-                    "name": "New York",
-                    "value": "New York",
-                    "link": "http://127.0.0.1:8000/city/new-york/",
-                    "slug": "new-york",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Neighborhood",
-                "slug": "neighborhood",
-                "has_archive": true,
-                "values": [{
-                    "name": "Upper East Side",
-                    "value": "Upper East Side",
-                    "link": "http://127.0.0.1:8000/neighborhood/upper-east-side/",
-                    "slug": "upper-east-side",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Street",
-                "slug": "street",
-                "has_archive": true,
-                "values": [{
-                    "name": "NY Upper East Side Street #1",
-                    "value": "NY Upper East Side Street #1",
-                    "link": "http://127.0.0.1:8000/street/ny-upper-east-side-street-1/",
-                    "slug": "ny-upper-east-side-street-1",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Bedrooms",
-                "slug": "bedrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "3",
-                    "value": "3",
-                    "link": "",
-                    "slug": "bedrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Bathrooms",
-                "slug": "bathrooms",
-                "has_archive": false,
-                "values": [{
-                    "name": "2",
-                    "value": "2",
-                    "link": "",
-                    "slug": "bathrooms",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Property size",
-                "slug": "property-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "1200 ft\u00b2",
-                    "value": "1200",
-                    "link": "",
-                    "slug": "property-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": true,
-                "icon": ""
-            }, {
-                "name": "Year",
-                "slug": "year-built",
-                "has_archive": false,
-                "values": [{
-                    "name": "2003",
-                    "value": "2003",
-                    "link": "",
-                    "slug": "year-built",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Lot size",
-                "slug": "lot-size",
-                "has_archive": false,
-                "values": [{
-                    "name": "2300 ft\u00b2",
-                    "value": "2300",
-                    "link": "",
-                    "slug": "lot-size",
-                    "options": []
-                }],
-                "display_after": "ft\u00b2",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }, {
-                "name": "Features",
-                "slug": "features",
-                "has_archive": false,
-                "values": [{
-                    "name": "Contemporary architecture",
-                    "value": "Contemporary architecture",
-                    "link": "http://127.0.0.1:8000/features/contemporary-architecture/",
-                    "slug": "contemporary-architecture",
-                    "options": []
-                }, {
-                    "name": "Dishwasher",
-                    "value": "Dishwasher",
-                    "link": "http://127.0.0.1:8000/features/dishwasher/",
-                    "slug": "dishwasher",
-                    "options": []
-                }, {
-                    "name": "Garden",
-                    "value": "Garden",
-                    "link": "http://127.0.0.1:8000/features/garden/",
-                    "slug": "garden",
-                    "options": []
-                }, {
-                    "name": "Hot Tub",
-                    "value": "Hot Tub",
-                    "link": "http://127.0.0.1:8000/features/hot-tub/",
-                    "slug": "hot-tub",
-                    "options": []
-                }, {
-                    "name": "Laundry",
-                    "value": "Laundry",
-                    "link": "http://127.0.0.1:8000/features/laundry/",
-                    "slug": "laundry",
-                    "options": []
-                }, {
-                    "name": "Lawn",
-                    "value": "Lawn",
-                    "link": "http://127.0.0.1:8000/features/lawn/",
-                    "slug": "lawn",
-                    "options": []
-                }, {
-                    "name": "Security System",
-                    "value": "Security System",
-                    "link": "http://127.0.0.1:8000/features/security-system/",
-                    "slug": "security-system",
-                    "options": []
-                }, {
-                    "name": "TV Cable",
-                    "value": "TV Cable",
-                    "link": "http://127.0.0.1:8000/features/tv-cable/",
-                    "slug": "tv-cable",
-                    "options": []
-                }, {
-                    "name": "WiFi",
-                    "value": "WiFi",
-                    "link": "http://127.0.0.1:8000/features/wifi/",
-                    "slug": "wifi",
-                    "options": []
-                }],
-                "display_after": "",
-                "show": true,
-                "card_show": false,
-                "icon": ""
-            }],
-            "address": "82-25 Parsons Blvd, Jamaica, NY 11432, USA",
-            "days_ago": "8 years ago",
-            "is_featured": false,
-            "offer_type": [{
-                "name": "For Sale",
-                "value": "For Sale",
-                "link": "http://127.0.0.1:8000/offer-type/sale/",
-                "slug": "sale",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#29aae3",
-                    "color": "#fff"
                 }
-            }, {
-                "name": "Sold!",
-                "value": "Sold!",
-                "link": "http://127.0.0.1:8000/offer-type/sold/",
-                "slug": "sold",
-                "options": {
-                    "has_label": true,
-                    "bg_color": "#222222",
-                    "color": "#ffffff"
-                }
-            }],
-            "status": "publish",
-            "payment_status": "pre_payment",
-            "attribute_classes": " mh-attribute-property-type__house mh-attribute-offer-type__sale mh-attribute-offer-type__sold mh-attribute-city__new-york mh-attribute-neighborhood__upper-east-side mh-attribute-street__ny-upper-east-side-street-1 mh-attribute-bedrooms__bedrooms mh-attribute-bathrooms__bathrooms mh-attribute-property-size__property-size mh-attribute-year-built__year-built mh-attribute-lot-size__lot-size mh-attribute-features__contemporary-architecture mh-attribute-features__dishwasher mh-attribute-features__garden mh-attribute-features__hot-tub mh-attribute-features__laundry mh-attribute-features__lawn mh-attribute-features__security-system mh-attribute-features__tv-cable mh-attribute-features__wifi",
-            "gallery": [{
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/summer-house-with-a-pole-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/warm-and-modern-studio-apartment-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/two-storey-modern-flat-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/modern-apartment-in-the-city-center-600x375.jpg",
-                "alt": ""
-            }, {
-                "image": "http://127.0.0.1:8000/wp-content/uploads/2017/01/minimalist-and-bright-flat-600x375.jpg",
-                "alt": ""
-            }],
-            "date": "October 6, 2017",
-            "price": [{
-                "price": "$600.000",
-                "is_range": false
-            }]
+            ]
         }],
         "totalResults": 80
     },
-    "dependencies": {
-        "property-type": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "offer-type": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "price": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "city": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "neighborhood": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "street": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "keyword": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "bedrooms": {
-            "all": false,
-            "house": true,
-            "apartment": true,
-            "office": false
-        },
-        "bathrooms": {
-            "all": false,
-            "house": true,
-            "apartment": true,
-            "office": false
-        },
-        "property-size": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "year-built": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "lot-size": {
-            "all": false,
-            "house": true,
-            "apartment": false,
-            "office": false
-        },
-        "property-id": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        },
-        "features": {
-            "all": true,
-            "house": true,
-            "apartment": true,
-            "office": true
-        }
-    },
+
     "default_values": [],
     "current_values": [],
     "homepage": "1",

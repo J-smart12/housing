@@ -7,21 +7,15 @@
 
         @include('layout.top_header')
         
-        <div class="mh-sticky-menu-placeholder
-					mh-sticky-menu-placeholder--active
-		"></div>
+        <div class="mh-sticky-menu-placeholder mh-sticky-menu-placeholder--active"></div>
         <div class="mh-top-title mh-top-title--image-background lazyload" style="background-size:cover;"
-            data-bgset="https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-960x250.jpg 960w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-300x78.jpg 300w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-1024x267.jpg 1024w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-768x200.jpg 768w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-1536x400.jpg 1536w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide-1440x375.jpg 1440w, https://carmodyrealestates.com/wp-content/uploads/2017/02/apartments-wide.jpg 1920w"
+            data-bgset={{ asset("wp-content/uploads/2017/02/apartments-wide-960x250.jpg") }}
             data-sizes="auto" data-parent-fit="cover">
             <h1 class="mh-top-title__heading">Properties</h1>
-
-
         </div>
         <div class="mh-breadcrumbs-wrapper " itemtype="http://schema.org/BreadcrumbList" itemscope>
             <div class="mh-layout">
                 <div class="mh-breadcrumbs">
-
-
                     <div class="mh-breadcrumbs__item-wrapper">
                         <div class="mh-breadcrumbs__item" itemprop="itemListElement"
                             itemtype="http://schema.org/ListItem" itemscope>

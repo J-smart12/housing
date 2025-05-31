@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Properties;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -40,7 +41,7 @@ class PropertyResource extends JsonResource
     {
         $perPage = $request->get('per_page', 10);
 
-        $properties = Property::with([
+        $properties = Properties::with([
             'attributes',
             'gallery',
             'features',

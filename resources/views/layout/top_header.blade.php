@@ -96,42 +96,15 @@
                         </li>
                         <li id="menu-item-3497"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3497 default_dropdown  drop_to_right submenu_default_width columns1">
-                            <a href="#" class="item_link  disable_icon" tabindex="2"> <i class=""></i>
-                                <span class="link_content"> <span class="link_text">
-                                        Properties </span> </span> </a>
-                            <ul class="mega_dropdown">
-                                <li id="menu-item-3550"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3550 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href={{ url('city-neighborhood-street/') }} class="item_link  disable_icon"
-                                        tabindex="3">
-                                        <i class=""></i>
-                                        <span class="link_content">
-                                            <span class="link_text"> City >> Neighborhood >> Street </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li id="menu-item-3546"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3546 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href={{ url('predefined-search-form-fields') }} class="item_link  disable_icon"
-                                        tabindex="4"> <i class=""></i>
-                                        <span class="link_content">
-                                            <span class="link_text"> Predefined search form </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li id="menu-item-3545"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3545 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href={{ url('advanced-search-form') }} class="item_link  disable_icon"
-                                        tabindex="5"> <i class=""></i>
-                                        <span class="link_content">
-                                            <span class="link_text"> Advanced Search Form</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul><!-- /.mega_dropdown -->
+                            <a href={{ url("properties") }} class="item_link  disable_icon" tabindex="2"> <i class=""></i>
+                                <span class="link_content"> 
+                                    <span class="link_text">
+                                        Properties 
+                                    </span> 
+                                </span> 
+                            </a>
                         </li>
-                        <li id="menu-item-3499"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499 default_dropdown  drop_to_right submenu_default_width columns1">
+                        <li id="menu-item-3499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499 default_dropdown  drop_to_right submenu_default_width columns1">
                             <a href={{ url('about-us/') }} class="item_link  disable_icon" tabindex="6">
                                 <i class=""></i>
                                 <span class="link_content">

@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
             // SettingSeeder::class,
             // GallerySeeder::class,
             // FeaturesTableSeeder::class,
-            OfferTypesTableSeeder::class,
+            // OfferTypesTableSeeder::class,
+            OfferTypePropertiesTableSeeder::class,
         ]);
         
     }

@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('offer_type_property', function (Blueprint $table) {
+        Schema::create('offer_type_properties', function (Blueprint $table) {
             $table->foreignId('offer_type_id')->constrained()->onDelete('cascade');
-            $table->foreignId('property_id')->constrained()->onDelete('cascade');
-            $table->primary(['offer_type_id', 'property_id']);
+            $table->foreignId('properties_id')->constrained()->onDelete('cascade');
+            $table->primary(['offer_type_id', 'properties_id']);
         });
     }
 
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('offer_type_property');
+        Schema::dropIfExists('offer_type_properties');
     }
 };

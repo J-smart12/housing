@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="xmlrpc.php" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <script>
         window.mapLoaded = function() {};
@@ -1492,7 +1489,7 @@
                                         </span>
                                     </span>
                                 </a>
-                                <ul class="mega_dropdown">
+                                {{-- <ul class="mega_dropdown">
                                     <li id="menu-item-3550"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3550 default_dropdown drop_to_right submenu_default_width columns1">
                                         <a href={{url("city-neighborhood-street")}} class="item_link disable_icon" tabindex="3">
@@ -1524,7 +1521,7 @@
                                             </span>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                                 <!-- /.mega_dropdown -->
                             </li>
                             <li id="menu-item-3499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499 default_dropdown drop_to_right submenu_default_width columns1">
