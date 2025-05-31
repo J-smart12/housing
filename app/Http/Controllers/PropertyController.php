@@ -66,18 +66,19 @@ class PropertyController extends Controller
     public function index(Request $request)
     {
         $page     = (int) $request->query('page', 1);
-        $limit    = (int) $request->query('limit', 10);
+        $limit    = (int) $request->query('limit', 6);
         $sortBy   = $request->query('sortBy', 'latest');
-        $currency = $request->query('currency', 'any'); // can be used later if needed
+        $currency = $request->query('currency', 'any');
 
         // Base query with relationships
         $query = Properties::with([
-            'gallery',
-            'features',
-            'offerType',
-            'price',
+            'galleries',
+            // 'features',
+            // 'offerType',
+            // 'price',
         ]);
 
+        // $query = Properties::query();
         // Sort logic
         switch ($sortBy) {
             case 'popular':

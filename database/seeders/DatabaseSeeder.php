@@ -19,9 +19,10 @@ class DatabaseSeeder extends Seeder
             // ClientSeeder::class,
             // BlogSeeder::class,
             // CitySeeder::class,
-            SettingSeeder::class,
+            // SettingSeeder::class,
             // GallerySeeder::class,
             // FeaturesTableSeeder::class,
+            OfferTypesTableSeeder::class,
         ]);
         
     }

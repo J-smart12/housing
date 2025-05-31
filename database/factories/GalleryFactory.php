@@ -18,7 +18,7 @@ class GalleryFactory extends Factory
     public function definition(): array
     {
         return [
-            'property_id' => Properties::inRandomOrder()->value('id') ?? Properties::factory(),
+            'properties_id' => Properties::inRandomOrder()->value('id') ?? Properties::factory(),
             'image' => $this->faker->imageUrl(800, 600, 'house'),
             'alt' => $this->faker->sentence(3),
         ];

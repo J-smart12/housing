@@ -14,7 +14,7 @@ class GallerySeeder extends Seeder
      */
     public function run(): void
     {
-         $properties = Properties::all();
+        $properties = Properties::all();
 
         if ($properties->isEmpty()) {
             $this->command->info('No properties found. Please seed properties first.');
@@ -23,7 +23,7 @@ class GallerySeeder extends Seeder
 
         foreach ($properties as $property) {
             Gallery::factory(rand(2, 5))->create([
-                'property_id' => $property->id,
+                'properties_id' => $property->id,
             ]);
         }
     }
