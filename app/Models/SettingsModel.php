@@ -12,6 +12,8 @@ class SettingsModel extends Model
         'address',
         'phone',
         'email',
+        'about_us',
+        'vision',
         'logo'
     ];
 }

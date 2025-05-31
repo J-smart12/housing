@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="../xmlrpc.php">
+    <link rel="pingback" href="xmlrpc.php">
 
     <link rel="stylesheet" id="myhome-font-awesome-css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css?ver=3.1.69" type="text/css"
@@ -21,9 +21,9 @@
     <link rel='dns-prefetch' href='https://cdnjs.cloudflare.com/' />
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
     <link rel='preconnect' href='https://fonts.gstatic.com/' crossorigin />
-    <link rel="alternate" type="application/rss+xml" title="Benallysrealestates.com &raquo; Feed" href="../feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Benallysrealestates.com &raquo; Feed" href="feed/" />
     <link rel="alternate" type="application/rss+xml" title="Benallysrealestates.com &raquo; Comments Feed"
-        href="../comments/feed/" />
+        href="comments/feed/" />
     <script type="text/javascript">
         /* <![CDATA[ */
         window._wpemojiSettings = {
@@ -817,16 +817,16 @@
     <script type="text/javascript" src={{ asset("wp-content/plugins/revslider/public/assets/js/rbtools.mine8c6.js?ver=6.6.13") }} async id="tp-tools-js"></script>
     <script type="text/javascript" src={{ asset("wp-content/plugins/revslider/public/assets/js/rs6.mine8c6.js?ver=6.6.13") }} async id="revmin-js"></script>
 
-    <link rel="https://api.w.org/" href="../wp-json/" />
-    <link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/1719.json" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+    <link rel="https://api.w.org/" href="wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/1719.json" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
     <meta name="generator" content="WordPress 6.8.1" />
     <link rel="canonical" href="" />
     <link rel='shortlink' href='' />
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-        href="../wp-json/oembed/1.0/embedfc39.json?url=https%3A%2F%2FBenallysrealestates.com%2Fabout-us%2F" />
+        href="wp-json/oembed/1.0/embedfc39.json?url=https%3A%2F%2FBenallysrealestates.com%2Fabout-us%2F" />
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-        href="../wp-json/oembed/1.0/embed5e61?url=https%3A%2F%2FBenallysrealestates.com%2Fabout-us%2F&amp;format=xml" />
+        href="wp-json/oembed/1.0/embed5e61?url=https%3A%2F%2FBenallysrealestates.com%2Fabout-us%2F&amp;format=xml" />
     <meta name="generator" content="Redux 4.4.1" />
     <style>
         @font-face {
@@ -1424,17 +1424,17 @@ Click the help icon above to learn more.
                     </div>
 
                     <div class="mh-footer__text">
-                        Carmody real estate ; the best in real estate </div>
+                        {{$settings->slug}} </div>
 
                     <address class="mh-footer__contact">
                         <i class="flaticon-pin"></i>
-                        130 Willow St, San Jose, California
+                        {{$settings->address}}
                     </address>
 
                     <div class="mh-footer__contact">
-                        <a href="tel:+15408240598">
+                        <a href="tel:{{$settings->phone}}">
                             <i class="flaticon-phone"></i>
-                            +15408240598 </a>
+                            {{$settings->phone}} </a>
                     </div>
 
 
@@ -1445,38 +1445,39 @@ Click the help icon above to learn more.
                     id="archives-4">
                     <h3 class="mh-footer__heading">Blog</h3>
                     <ul>
-                        <li><a href='2017/10/'>October 2017</a></li>
-                        <li><a href='2017/09/'>September 2017</a></li>
-                        <li><a href='2017/08/'>August 2017</a></li>
-                        <li><a href='2017/07/'>July 2017</a></li>
+                        <li><a href={{ url('2017/10/') }}>October 2017</a></li>
+                        <li><a href={{ url('2017/09/') }}>September 2017</a></li>
+                        <li><a href={{ url('2017/08/') }}>August 2017</a></li>
+                        <li><a href={{ url('2017/07/') }}>July 2017</a></li>
                     </ul>
 
                 </div>
                 <div class="mh-footer__row__column mh-footer__row__column--1of4 widget widget_tag_cloud"
                     id="tag_cloud-3">
                     <h3 class="mh-footer__heading">Features</h3>
-                    <div class="tagcloud"><a href="../features/air-conditioning/"
+                    <div class="tagcloud">
+                        <a href={{ url("features/air-conditioning/") }}
                             class="tag-cloud-link tag-link-33 tag-link-position-1" style="font-size: 22pt;"
                             aria-label="Air Conditioning (32 items)">Air Conditioning</a>
-                        <a href="../features/ceiling-fan/" class="tag-cloud-link tag-link-30 tag-link-position-2"
+                        <a href={{ url("features/ceiling-fan/") }} class="tag-cloud-link tag-link-30 tag-link-position-2"
                             style="font-size: 9.5555555555556pt;" aria-label="Ceiling Fan (22 items)">Ceiling
                             Fan</a>
-                        <a href="../features/dishwasher/" class="tag-cloud-link tag-link-22 tag-link-position-3"
+                        <a href={{ url("features/dishwasher/") }} class="tag-cloud-link tag-link-22 tag-link-position-3"
                             style="font-size: 15pt;" aria-label="Dishwasher (26 items)">Dishwasher</a>
-                        <a href="../features/fireplace/" class="tag-cloud-link tag-link-19 tag-link-position-4"
+                        <a href={{ url("features/fireplace/") }} class="tag-cloud-link tag-link-19 tag-link-position-4"
                             style="font-size: 12.666666666667pt;" aria-label="Fireplace (24 items)">Fireplace</a>
-                        <a href="../features/high-ceilings/" class="tag-cloud-link tag-link-28 tag-link-position-5"
+                        <a href={{ url("features/high-ceilings/") }} class="tag-cloud-link tag-link-28 tag-link-position-5"
                             style="font-size: 8pt;" aria-label="High ceilings (21 items)">High ceilings</a>
-                        <a href="../features/microwave/" class="tag-cloud-link tag-link-27 tag-link-position-6"
+                        <a href={{ url("features/microwave/") }} class="tag-cloud-link tag-link-27 tag-link-position-6"
                             style="font-size: 11.111111111111pt;" aria-label="Microwave (23 items)">Microwave</a>
-                        <a href="../features/patio/" class="tag-cloud-link tag-link-25 tag-link-position-7"
+                        <a href={{ url("features/patio/") }} class="tag-cloud-link tag-link-25 tag-link-position-7"
                             style="font-size: 16.555555555556pt;" aria-label="Patio (27 items)">Patio</a>
-                        <a href="../features/porch/" class="tag-cloud-link tag-link-15 tag-link-position-8"
+                        <a href={{ url("features/porch/") }} class="tag-cloud-link tag-link-15 tag-link-position-8"
                             style="font-size: 13.444444444444pt;" aria-label="Porch (25 items)">Porch</a>
-                        <a href="../features/refrigerator/" class="tag-cloud-link tag-link-37 tag-link-position-9"
+                        <a href={{ url("features/refrigerator/") }} class="tag-cloud-link tag-link-37 tag-link-position-9"
                             style="font-size: 12.666666666667pt;"
                             aria-label="Refrigerator (24 items)">Refrigerator</a>
-                        <a href="../features/wifi/" class="tag-cloud-link tag-link-34 tag-link-position-10"
+                        <a href={{ url("features/wifi/") }} class="tag-cloud-link tag-link-34 tag-link-position-10"
                             style="font-size: 9.5555555555556pt;" aria-label="WiFi (22 items)">WiFi</a>
                     </div>
                 </div>
@@ -1511,11 +1512,12 @@ Click the help icon above to learn more.
 
     <div class="mh-footer-bottom ">
         <div class="mh-layout">
-            benallysrealestates 2023. All rights reserved. </div>
+            Benallysrealestates {{ date("Y") }}. All rights reserved. </div>
     </div>
 
 
 </footer>
+
 <account id="myhome-account"></account>
 <save-search id="myhome-save-search"></save-search>
 <div>

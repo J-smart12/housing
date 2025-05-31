@@ -1388,6 +1388,7 @@
 </head>
 
 <body id="myhome-app" class="home wp-singular page-template page-template-page_full-width page-template-page_full-width-php page page-id-5 wp-theme-myhome mmm mega_main_menu-2-2-1-1 myhome-body mh-hide-top-bar-on-mobile mh-active-input-primary myhome-3-1-69 essb-9.0 wpb-js-composer js-comp-ver-6.13.0 vc_responsive">
+    
     <div class="mh-fixed-menu mh-fixed-menu--transparent-light">
         <div class="mh-top-header mh-top-header--default">
             <div class="mh-layout">
@@ -1554,7 +1555,7 @@
             </div>
             <!-- /id="mega_main_menu" -->
         </div>
-    </div>
+    </div> 
 
     <div class="mh-sticky-menu-placeholder mh-sticky-menu-placeholder--active"></div>
     
@@ -1816,7 +1817,7 @@
                                                                 </div>
                                                             @endif
                                                         @endforeach --}}
-                                                            
+                                                             
                                                         </div>
 
                                                         <div class="mh-estate-vertical__text">
@@ -2097,55 +2098,55 @@
                                 </div>
                                 <div class="owl-carousel owl-carousel--visible-3 owl-carousel--no-auto-play">
                                     @foreach($staffs as $staff)
-                                    <div class="mh-agent mh-agent--white">
-                                        <a href={{ url("agent/".$staff->slug) }} class="mh-agent__thumbnail"
-                                            title= {{ $staff->name }}>
-                                            <img data-srcset={{ $staff->image }} src={{ $staff->image }}
-                                                class="lazyload" data-sizes="auto" alt= {{ $staff->name }} />
-                                        </a>
+                                        <div class="mh-agent mh-agent--white">
+                                            <a href={{ url("agent/".$staff->slug) }} class="mh-agent__thumbnail"
+                                                title= {{ $staff->name }}>
+                                                <img data-srcset={{ $staff->image }} src={{ $staff->image }}
+                                                    class="lazyload" data-sizes="auto" alt= {{ $staff->name }} />
+                                            </a>
 
-                                        <div class="mh-agent__content">
-                                            <h3 class="mh-agent__heading">
-                                                <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}>
-                                                    {{ $staff->name }}
-                                                </a>
-                                            </h3>
-
-                                            <div class="mh-agent__additional-fields">
-                                                <div class="mh-agent__additional-fields__item">
-                                                    <strong>
-                                                        Organization:
-                                                    </strong>
-                                                    Carmody Real Estate
-                                                </div>
-                                            </div>
-
-                                            <div class="mh-agent-contact">
-                                                <div class="mh-agent-contact__element">
-                                                    <a href="mailto:{{ $staff->email }}">
-                                                        <i class="flaticon-mail-2"></i>
-                                                        {{ $staff->email }}
+                                            <div class="mh-agent__content">
+                                                <h3 class="mh-agent__heading">
+                                                    <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}>
+                                                        {{ $staff->name }}
                                                     </a>
+                                                </h3>
+
+                                                <div class="mh-agent__additional-fields">
+                                                    <div class="mh-agent__additional-fields__item">
+                                                        <strong>
+                                                            Organization:
+                                                        </strong>
+                                                        Carmody Real Estate
+                                                    </div>
                                                 </div>
 
-                                                <div class="mh-agent-contact__element">
-                                                    <a href="tel:{{ $staff->phone }}">
-                                                        <i class="flaticon-phone"></i>
-                                                        {{ $staff->phone }}
-                                                    </a>
-                                                </div>
-                                            </div>
+                                                <div class="mh-agent-contact">
+                                                    <div class="mh-agent-contact__element">
+                                                        <a href="mailto:{{ $staff->email }}">
+                                                            <i class="flaticon-mail-2"></i>
+                                                            {{ $staff->email }}
+                                                        </a>
+                                                    </div>
 
-                                            <div class="mh-agent__button-wrapper">
-                                                <div class="mh-agent__button">
-                                                    <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}
-                                                        class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
-                                                        Full Profile
-                                                    </a>
+                                                    <div class="mh-agent-contact__element">
+                                                        <a href="tel:{{ $staff->phone }}">
+                                                            <i class="flaticon-phone"></i>
+                                                            {{ $staff->phone }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mh-agent__button-wrapper">
+                                                    <div class="mh-agent__button">
+                                                        <a href={{ url("agent/".$staff->slug) }} title= {{ $staff->name }}
+                                                            class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
+                                                            Full Profile
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     @endforeach
                                 </div>
 
@@ -2218,35 +2219,35 @@
                                 </div>
                                 <div class="owl-carousel owl-carousel--visible-3 owl-carousel--no-auto-play">
                                     @foreach($blogs as $blog)
-                                    <article
-                                        class="mh-post-grid mh-post-grid--img-absolute mh-post-grid--white post-827 post type-post status-publish format-standard has-post-thumbnail hentry category-home-design tag-architecture tag-design tag-house">
-                                        <a href={{ url("blogs/".$blog->slug) }}
-                                            title={{ $blog->title}}
-                                            class="mh-post-grid__thumbnail">
-                                            <div class="mh-thumbnail__inner">
-                                                <img data-srcset={{ $blog->image }} src={{ $blog->image }} class="lazyload" data-sizes="auto" alt={{ $blog->title }} />
+                                        <article
+                                            class="mh-post-grid mh-post-grid--img-absolute mh-post-grid--white post-827 post type-post status-publish format-standard has-post-thumbnail hentry category-home-design tag-architecture tag-design tag-house">
+                                            <a href={{ url("blogs/".$blog->slug) }}
+                                                title={{ $blog->title}}
+                                                class="mh-post-grid__thumbnail">
+                                                <div class="mh-thumbnail__inner">
+                                                    <img data-srcset={{ $blog->image }} src={{ $blog->image }} class="lazyload" data-sizes="auto" alt={{ $blog->title }} />
+                                                </div>
+                                                <span class="mh-caption">
+                                                    <span class="mh-caption__inner">{{$blog->date}}</span>
+                                                </span>
+                                            </a>
+                                            <div class="mh-post-grid__inner">
+                                                <h3 class="mh-post-grid__heading">
+                                                    <a href={{ url("blogs/".$blog->slug) }}
+                                                        title={{ $blog->title}}>
+                                                        {{ $blog->title }}
+                                                    </a>
+                                                </h3>
+                                                <div class="mh-post-grid__excerpt">
+                                                    {{ \Illuminate\Support\Str::words($blog->body, 40) }}
+                                                </div>
+                                                <div class="mh-post-grid__btn-wrapper">
+                                                    <a href={{ url("blogs/".$blog->slug) }} title={{ $blog->title}} class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
+                                                        Read more
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <span class="mh-caption">
-                                                <span class="mh-caption__inner">{{$blog->date}}</span>
-                                            </span>
-                                        </a>
-                                        <div class="mh-post-grid__inner">
-                                            <h3 class="mh-post-grid__heading">
-                                                <a href={{ url("blogs/".$blog->slug) }}
-                                                    title={{ $blog->title}}>
-                                                    {{ $blog->title }}
-                                                </a>
-                                            </h3>
-                                            <div class="mh-post-grid__excerpt">
-                                                {{ \Illuminate\Support\Str::words($blog->body, 40) }}
-                                            </div>
-                                            <div class="mh-post-grid__btn-wrapper">
-                                                <a href={{ url("blogs/".$blog->slug) }} title={{ $blog->title}} class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
-                                                    Read more
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </article>
+                                        </article>
                                     @endforeach
                                 </div>
                                 <div style="text-align: center" class="vc_custom_1530529944515">
@@ -2293,12 +2294,9 @@
                                             <a href="#" title="Codecanyon"
                                                 target="_blank">
                                                 <img decoding="async" width="329" height="54"
-                                                    src="wp-content/uploads/2017/01/codecanyon.png"
                                                     class="attachment-full size-full wp-post-image" alt=""
-                                                    srcset="
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/codecanyon.png        329w,
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/codecanyon-300x49.png 300w
-                                                        "
+                                                    src={{ asset("wp-content/uploads/2017/01/codecanyon.png") }}
+                                                    srcset={{ asset("wp-content/uploads/2017/01/codecanyon.png") }}
                                                     sizes="(max-width: 329px) 100vw, 329px" />
                                             </a>
                                         </div>
@@ -2308,12 +2306,9 @@
                                             <a href="#"
                                                 title="Graphicriver" target="_blank">
                                                 <img decoding="async" width="332" height="78"
-                                                    src="wp-content/uploads/2017/01/graphicriver.png"
+                                                    src={{ asset("wp-content/uploads/2017/01/graphicriver.png") }}
                                                     class="attachment-full size-full wp-post-image" alt=""
-                                                    srcset="
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/graphicriver.png        332w,
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/graphicriver-300x70.png 300w
-                                                        "
+                                                    srcset={{ asset("wp-content/uploads/2017/01/graphicriver.png") }}
                                                     sizes="(max-width: 332px) 100vw, 332px" />
                                             </a>
                                         </div>
@@ -2323,12 +2318,9 @@
                                             <a href="#" title="Photodune"
                                                 target="_blank">
                                                 <img loading="lazy" decoding="async" width="304" height="68"
-                                                    src="wp-content/uploads/2017/01/photodune.png"
+                                                    src={{ asset("wp-content/uploads/2017/01/photodune.png") }}
                                                     class="attachment-full size-full wp-post-image" alt=""
-                                                    srcset="
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/photodune.png        304w,
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/photodune-300x67.png 300w
-                                                        "
+                                                    srcset={{ asset("wp-content/uploads/2017/01/photodune.png") }}
                                                     sizes="auto, (max-width: 304px) 100vw, 304px" />
                                             </a>
                                         </div>
@@ -2338,12 +2330,10 @@
                                             <a href="#"
                                                 title="Themeforest" target="_blank">
                                                 <img loading="lazy" decoding="async" width="324"
-                                                    height="55" src="wp-content/uploads/2017/01/themeforest.png"
+                                                    height="55" 
+                                                    src={{ asset("wp-content/uploads/2017/01/themeforest.png") }}
                                                     class="attachment-full size-full wp-post-image" alt=""
-                                                    srcset="
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/themeforest.png        324w,
-                                                            http://127.0.0.1:8000/wp-content/uploads/2017/01/themeforest-300x51.png 300w
-                                                        "
+                                                    srcset={{ asset("wp-content/uploads/2017/01/themeforest.png") }}
                                                     sizes="auto, (max-width: 324px) 100vw, 324px" />
                                             </a>
                                         </div>

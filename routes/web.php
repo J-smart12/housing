@@ -2,76 +2,43 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
-// use App\Http\Controllers\PropertyAttributeController;
-// use App\Http\Controllers\PropertyAttributeValueController;
-// use App\Http\Controllers\PropertyTypeController;
 use App\Http\Controllers\FeaturedProperties;
+use App\Http\Controllers\AgentController;
+use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\FeaturesController;
 
 Route::get('api/properties', [PropertyController::class, 'index']);
-
 Route::get('/', [PropertyController::class, 'landing']);
+Route::get('/about-us', [PropertyController::class, 'about']);
+Route::get('/panel', [PropertyController::class, 'login']);
 
-Route::get('/about-us', function () {
-    return view('about-us.index');
-});
-
-Route::get('/panel', function () {
-    return view('panel.index');
-});
+Route::get('/our-team', [PropertyController::class, 'teams']);
+Route::get('/predefined-search-form-fields', [PropertyController::class, 'predefined_search']);
+Route::get('/city-neighborhood-street', [PropertyController::class, 'city_neighborhood']);
+Route::get('/advanced-search-form', [PropertyController::class, 'advanced_search']);
 
 Route::get('/featured', [FeaturedProperties::class, 'index']);
 
-Route::get('/city/{city}', function () {
-    return view('city.index');
+Route::prefix('agent')->group(function () {
+    Route::get('/{slug}', [AgentController::class, 'index']);
 });
-
-Route::get('/our-team', function () {
-    return view('our-team.index');
-});
-
 Route::prefix('properties')->group(function () {
-    Route::get('/', function () {
-        return view('properties.index');
-    });
-
+    Route::get('/', [PropertyController::class, 'all_properties']);
     Route::get('/{type}/{city}/{slug}', [PropertyController::class, 'property']);
 });
-
 Route::prefix('blogs')->group(function () {
-    Route::get('/', function () {
-        return view('blog.index');
-    });
-
-    Route::get('/{title}', function () {
-        return view('blog.blog-content');
-    });
+    Route::get('/', [BlogsController::class, 'index']);
+    Route::get('/{title}', [BlogsController::class, 'blog']);
 });
 
-Route::prefix('agent')->group(function () {
-    Route::get('/{name}', function () {
-        return view('agent.index');
-    });
+Route::get('/features/{slug}', [FeaturesController::class, 'index']);
+
+Route::get('/city/{city}', function () {
+    return view('city.index');
 });
 
 Route::prefix('2017')->group(function () {
     Route::get('/{id}', function () {
         return view('2017.index');
     });
-});
-
-Route::get('/predefined-search-form-fields', function () {
-    return view('predefined-search-form-fields.index');
-});
-
-Route::get('/city-neighborhood-street', function () {
-    return view('city-neighborhood-street.index');
-});
-
-Route::get('/advanced-search-form', function () {
-    return view('advanced-search-form.index');
-});
-
-
-Route::get('/featured/properties', function () {
-    return view('blog.blog-content');
 });

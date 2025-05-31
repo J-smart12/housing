@@ -3,154 +3,16 @@
 
 @section('body')
 
-    <body id="myhome-app"
-        class="wp-singular page-template page-template-page_full-width-with-top-title page-template-page_full-width-with-top-title-php page page-id-1719 wp-theme-myhome mmm mega_main_menu-2-2-1-1 myhome-body mh-hide-top-bar-on-mobile mh-active-input-primary myhome-3-1-69 essb-9.0 wpb-js-composer js-comp-ver-6.13.0 vc_responsive">
+    <body id="myhome-app" class="wp-singular page-template page-template-page_full-width-with-top-title page-template-page_full-width-with-top-title-php page page-id-1719 wp-theme-myhome mmm mega_main_menu-2-2-1-1 myhome-body mh-hide-top-bar-on-mobile mh-active-input-primary myhome-3-1-69 essb-9.0 wpb-js-composer js-comp-ver-6.13.0 vc_responsive">
 
-        <div class="mh-fixed-menu mh-fixed-menu--transparent-light">
-            <div class="mh-top-header mh-top-header--default">
+       @include('layout.top_header')
 
-                <div class="mh-layout">
-
-                    <div class="mh-menu-currency-wrapper">
-                        <span class="mh-currency-switcher__label">Currency </span>
-                        <select id="mh-menu-currency_switcher" class="selectpicker mh-currency-switcher">
-                            <option value="any">Any</option>
-                            <option value="price" selected="selected">
-                                $ </option>
-                            <option value="price_5">
-                                £ </option>
-                        </select>
-                    </div>
-
-
-                    <span class="mh-top-header__element mh-top-header__element--phone">
-                        <a href="tel:+15408240598">
-                            <i class="flaticon-phone"></i>
-                            +15408240598 </a>
-                    </span>
-
-                    <span class="mh-top-header__element">
-                        <address>
-                            <i class="flaticon-pin"></i>
-                            130 Willow St, San Jose, California
-                        </address>
-                    </span>
-
-
-                    <span class="mh-top-header__element mh-top-header__element--social-icons">
-                        <span>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook mh-top-header-big__element__icon-big"></i>
-                            </a>
-                        </span>
-
-                        <span>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter mh-top-header-big__element__icon-big"></i>
-                            </a>
-                        </span>
-
-                        <span>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-instagram mh-top-header-big__element__icon-big"></i>
-                            </a>
-                        </span>
-
-                        <span>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-linkedin mh-top-header-big__element__icon-big"></i>
-                            </a>
-                        </span>
-                    </span>
-
-                    <div class="mh-top-bar-user-panel-small">
-                        <div class="mh-top-bar-user-panel">
-                            <user-bar id="myhome-user-bar"></user-bar>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="mh-header default">
-                <!-- begin "mega_main_menu" -->
-                <div id="mega_main_menu"
-                    class="mh-primary primary_style-flat icons-left first-lvl-align-left first-lvl-separator-none direction-horizontal fullwidth-disable pushing_content-disable mobile_minimized-enable dropdowns_trigger-hover dropdowns_animation-anim_4 no-logo no-search no-woo_cart no-buddypress responsive-enable coercive_styles-disable indefinite_location_mode-disable language_direction-ltr version-2-2-1-1 mh-primary primary_style-flat icons-left first-lvl-align-left first-lvl-separator-none direction-horizontal fullwidth-disable pushing_content-disable mobile_minimized-enable dropdowns_trigger-hover dropdowns_animation-anim_4 no-logo no-search no-woo_cart no-buddypress responsive-enable coercive_styles-disable indefinite_location_mode-disable language_direction-ltr version-2-2-1-1 mega_main mega_main_menu">
-                    <div class="menu_holder">
-                        <div class="mmm_fullwidth_container"></div><!-- class="fullwidth_container" -->
-                        <div class="menu_inner"> <span class="nav_logo">
-                                <a class="mobile_toggle">
-                                    <span class="mobile_button">
-                                        <span class="symbol_menu"><i class="fas fa-bars"></i></span>
-                                        <span class="symbol_cross"><i class="fas fa-times"></i></span>
-                                    </span>
-                                </a>
-                                <a class="logo_link" href="../" title="Carmodyrealestates.com">
-                                    <img src="../wp-content/uploads/2017/03/logo-40-blue-black.png"
-                                        data-logo="https://carmodyrealestates.com/wp-content/uploads/2017/03/logo-40-blue-black.png"
-                                        alt="Carmodyrealestates.com">
-                                </a>
-                            </span>
-                            <!-- /class="nav_logo" -->
-                            <ul id="mega_main_menu_ul" class="mega_main_menu_ul">
-                                <li id="menu-item-1424"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1424 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href="#" class="item_link  disable_icon" tabindex="1"> <i class=""></i>
-                                        <span class="link_content"> <span class="link_text"> Home
-                                            </span> </span> </a>
-                                </li>
-                                <li id="menu-item-3497"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3497 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href="#" class="item_link  disable_icon" tabindex="2"> <i class=""></i>
-                                        <span class="link_content"> <span class="link_text">
-                                                Properties </span> </span> </a>
-                                    <ul class="mega_dropdown">
-                                        <li id="menu-item-3550"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3550 default_dropdown  drop_to_right submenu_default_width columns1">
-                                            <a href="../city-neighborhood-street/" class="item_link  disable_icon"
-                                                tabindex="3"> <i class=""></i>
-                                                <span class="link_content"> <span class="link_text"> City >> Neighborhood
-                                                        >> Street </span> </span> </a>
-                                        </li>
-                                        <li id="menu-item-3546"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3546 default_dropdown  drop_to_right submenu_default_width columns1">
-                                            <a href="../predefined-search-form-fields/" class="item_link  disable_icon"
-                                                tabindex="4"> <i class=""></i>
-                                                <span class="link_content"> <span class="link_text"> Predefined search
-                                                        form </span> </span> </a>
-                                        </li>
-                                        <li id="menu-item-3545"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3545 default_dropdown  drop_to_right submenu_default_width columns1">
-                                            <a href="../advanced-search-form/" class="item_link  disable_icon"
-                                                tabindex="5"> <i class=""></i> <span class="link_content"> <span
-                                                        class="link_text"> Advanced Search Form </span> </span> </a>
-                                        </li>
-                                    </ul><!-- /.mega_dropdown -->
-                                </li>
-                                <li id="menu-item-3499"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1719 current_page_item menu-item-3499 default_dropdown  drop_to_right submenu_default_width columns1">
-                                    <a href="" class="item_link  disable_icon" tabindex="6"> <i
-                                            class=""></i> <span class="link_content"> <span class="link_text">
-                                                About us </span> </span> </a>
-                                </li>
-                                <li id="mh-submit-button"> <span class="item_link"> <span class="link_content"> <a
-                                                id="myhome-submit-property" href="../panel/#/submit-property"
-                                                title="Submit property"> Submit property <i class="fas fa-plus-circle"
-                                                    aria-hidden="true"></i> </a> </span> </span> </li>
-                            </ul>
-                        </div><!-- /class="menu_inner" -->
-                    </div><!-- /class="menu_holder" -->
-                </div><!-- /id="mega_main_menu" -->
-            </div>
-        </div>
         <div class="mh-sticky-menu-placeholder mh-sticky-menu-placeholder--active"></div>
         
         <div class="mh-top-title mh-top-title--image-background lazyload" style="background-size:cover;"
             data-bgset="https://carmodyrealestates.com/wp-content/uploads/2018/07/inside-960x250.jpg 960w, https://carmodyrealestates.com/wp-content/uploads/2018/07/inside-1440x375.jpg 1440w"
             data-sizes="auto" data-parent-fit="cover">
             <h1 class="mh-top-title__heading">About us</h1>
-
-
         </div>
 
         <div class="mh-layout mh-top-title-offset">
@@ -177,8 +39,9 @@
                                                                 Our company </h3>
 
                                                             <div class="mh-subheading " style="">
-                                                                Benallyreal estate is the leading real estate company in
-                                                                California and across United State Of America </div>
+                                                                {{-- {{ $settings->about_us }} --}}
+                                                                {{ $settings->slug }}
+                                                            </div>
                                                         </div>
 
                                                     </div>
@@ -201,9 +64,9 @@
                                                                 Our Vision </h3>
 
                                                             <div class="mh-subheading " style="">
-                                                                We envision to help an average American citizens own a home
-                                                                through our fare prizes and flexible payment plans based on
-                                                                our terms and condtions at Benallyreal estate </div>
+                                                                {{-- {{ $settings->our_vision }}  --}}
+                                                                {{ $settings->slug }}
+                                                            </div>
                                                         </div>
 
                                                     </div>
@@ -225,110 +88,63 @@
                                         <div class="mh-heading-wrapper">
                                             <h2 class="mh-heading  mh-heading--bottom-separator    vc_custom_1530610495498"
                                                 style="font-weight:700;">
-                                                Our Team </h2>
-
+                                                Our Team 
+                                            </h2>
                                         </div>
-
                                     </div>
                                     <div class="mh-agent-list">
+                                        @foreach($staffs as $staff)
+                                            <div class="mh-agent-list__element">
+                                                <article class="mh-agent ">
+                                                    <a href={{ url("agent/".$staff->slug) }} class="mh-agent__thumbnail"
+                                                        title={{ $staff->name }}>
+                                                        <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-100x100.jpg 100w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-150x150.jpg 150w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-400x400.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-200x200.jpg 200w"
+                                                            class="lazyload " data-sizes="auto" alt={{ $staff->name }}>
+                                                    </a>
 
-                                        <div class="mh-agent-list__element">
-                                            <article class="mh-agent mh-agent--white">
-                                                <a href="../agent/daniella-suzanne/" class="mh-agent__thumbnail"
-                                                    title="Gary Benally">
-                                                    <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-100x100.jpg 100w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-150x150.jpg 150w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-400x400.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2023/07/0cda57d6-9051-4bd3-b81c-3cf8308eac59-200x200.jpg 200w"
-                                                        class="lazyload " data-sizes="auto" alt="Gary Carmody">
-                                                </a>
-
-                                                <div class="mh-agent__content">
-                                                    <h3 class="mh-agent__heading">
-                                                        <a href="../agent/daniella-suzanne/">
-                                                            Gary Benally</a>
-                                                    </h3>
+                                                    <div class="mh-agent__content">
+                                                        <h3 class="mh-agent__heading">
+                                                            <a href={{ url("agent/".$staff->slug) }} title={{ $staff->name }}>
+                                                                {{ $staff->name }} </a>
+                                                        </h3>
 
 
-                                                    <div class="mh-agent__additional-fields">
-                                                        <div class="mh-agent__additional-fields__item">
-                                                            <strong>
-                                                                Organization:
-                                                            </strong>
-                                                            BenallyReal Estate
+                                                        <div class="mh-agent__additional-fields">
+                                                            <div class="mh-agent__additional-fields__item">
+                                                                <strong>
+                                                                    Organization:
+                                                                </strong>
+                                                                Carmody Real Estate
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mh-agent-contact">
+                                                            <div class="mh-agent-contact__element">
+                                                                <a href="mailto:{{ $staff->email }}">
+                                                                    <i class="flaticon-mail-2"></i>
+                                                                    {{ $staff->email }} </a>
+                                                            </div>
+
+                                                            <div class="mh-agent-contact__element">
+                                                                <a href="tel:{{ $staff->phone }}">
+                                                                    <i class="flaticon-phone"></i>
+                                                                    {{ $staff->phone }} </a>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="mh-agent__button-wrapper">
+                                                            <div class="mh-agent__button">
+                                                                <a href={{ url("agent/".$staff->slug) }} title={{ $staff->name }}
+                                                                    class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
+                                                                    Full Profile </a>
+                                                            </div>
                                                         </div>
                                                     </div>
-
-                                                    <div class="mh-agent-contact">
-                                                        <div class="mh-agent-contact__element">
-                                                            <a href="mailto:garyBenally@tangibledesign.net">
-                                                                <i class="flaticon-mail-2"></i>
-                                                                garyBenally@tangibledesign.net </a>
-                                                        </div>
-
-                                                        <div class="mh-agent-contact__element">
-                                                            <a href="tel:+15408240598">
-                                                                <i class="flaticon-phone"></i>
-                                                                +15408240598 </a>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="mh-agent__button-wrapper">
-                                                        <div class="mh-agent__button">
-                                                            <a href="../agent/daniella-suzanne/" title="Gary Benally"
-                                                                class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
-                                                                Full Profile </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-
-                                        <div class="mh-agent-list__element">
-                                            <article class="mh-agent mh-agent--white">
-                                                <a href="../agent/philip-Benally/" class="mh-agent__thumbnail"
-                                                    title="Williams Benally">
-                                                    <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-19-at-17.18.57-100x100.jpeg 100w, https://carmodyrealestates.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-19-at-17.18.57-150x150.jpeg 150w, https://carmodyrealestates.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-19-at-17.18.57-400x400.jpeg 400w, https://carmodyrealestates.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-19-at-17.18.57-200x200.jpeg 200w"
-                                                        class="lazyload " data-sizes="auto" alt="Williams Carmody">
-                                                </a>
-
-                                                <div class="mh-agent__content">
-                                                    <h3 class="mh-agent__heading">
-                                                        <a href="../agent/philip-carmody/">
-                                                            Williams Benally</a>
-                                                    </h3>
-
-
-                                                    <div class="mh-agent__additional-fields">
-                                                        <div class="mh-agent__additional-fields__item">
-                                                            <strong>
-                                                                Organization:
-                                                            </strong>
-                                                            BenallyReal Estate
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mh-agent-contact">
-                                                        <div class="mh-agent-contact__element">
-                                                            <a href="mailto:Benallypwilliams@gmail.com">
-                                                                <i class="flaticon-mail-2"></i>
-                                                                Benallypwilliams@gmail.com </a>
-                                                        </div>
-
-                                                    </div>
-
-
-                                                    <div class="mh-agent__button-wrapper">
-                                                        <div class="mh-agent__button">
-                                                            <a href="../agent/philip-carmody/" title="Williams Carmody"
-                                                                class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary-ghost">
-                                                                Full Profile </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-
+                                                </article>
+                                            </div>
+                                        @endforeach
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -343,91 +159,36 @@
                                         <div class="mh-heading-wrapper">
                                             <h2 class="mh-heading  mh-heading--bottom-separator   "
                                                 style="font-weight:700;">
-                                                Testimonials </h2>
-
+                                                Testimonials 
+                                            </h2>
                                         </div>
 
                                     </div>
-                                    <div
-                                        class="owl-carousel owl-carousel--visible-1  mh-testimonials--dark mh-testimonials--standard">
-                                        <div class="item">
+                                    <div class="owl-carousel owl-carousel--visible-1  mh-testimonials--dark mh-testimonials--standard">
+                                        @foreach ($testimonials as $testimonial)
+                                            <div class="item">
                                             <article class="mh-testimonial">
                                                 <div class="mh-testimonial__inner">
                                                     <blockquote class="mh-testimonial__text">
-                                                        <p>I wanna thank Benallyreal estate for the opportunity to get a
-                                                            home from them.. It was such a privilege and i never regret it..
-                                                            I recommend Benallyreal estate to everyone that really wish for
-                                                            a beautiful home in United State and Abroad</p>
+                                                        <p>{{ $testimonial->testimonial }}</p>
                                                     </blockquote>
                                                     <div class="mh-testimonial__photo">
-                                                        <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan-100x100.jpg 100w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan-300x300.jpg 300w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan-150x150.jpg 150w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan-400x400.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan-200x200.jpg 200w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Willard-Donovan.jpg 634w"
-                                                            class="lazyload " data-sizes="auto" alt="Willard Donovan">
+                                                        <img data-srcset={{ $testimonial->image }}
+                                                            src={{ $testimonial->image }}
+                                                            class="lazyload " data-sizes="auto" alt={{ $testimonial->name }}>
                                                     </div>
 
                                                     <div class="mh-testimonial__author-info">
                                                         <h3 class="mh-testimonial__author">
-                                                            Willard Donovan </h3>
+                                                            {{ $testimonial->name }} </h3>
 
                                                         <div class="mh-testimonial__occupation">
-                                                            CEO, Alpha </div>
+                                                            {{ $testimonial->position }}, {{ $testimonial->role }}</div>
                                                     </div>
                                                 </div>
                                             </article>
                                         </div>
-                                        <div class="item">
-                                            <article class="mh-testimonial">
-                                                <div class="mh-testimonial__inner">
-                                                    <blockquote class="mh-testimonial__text">
-                                                        <p>Special thanks to Philip Benallyfor helping through the process
-                                                            of getting a home from this company&#8230; I wasn&#8217;t sure
-                                                            at first but the leadership of the company helped me through .
-                                                            Thank you soo much and i fully rocommend Benallyreal estate for
-                                                            your next property all around United State of America</p>
-                                                    </blockquote>
-                                                    <div class="mh-testimonial__photo">
-                                                        <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia-100x100.jpg 100w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia-300x300.jpg 300w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia-150x150.jpg 150w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia-400x400.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia-200x200.jpg 200w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Orpha-Letitia.jpg 634w"
-                                                            class="lazyload " data-sizes="auto" alt="Orpha Letitia">
-                                                    </div>
-
-                                                    <div class="mh-testimonial__author-info">
-                                                        <h3 class="mh-testimonial__author">
-                                                            Orpha Letitia </h3>
-
-                                                        <div class="mh-testimonial__occupation">
-                                                            Systems Engineer, Beta Manufacturing </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="item">
-                                            <article class="mh-testimonial">
-                                                <div class="mh-testimonial__inner">
-                                                    <blockquote class="mh-testimonial__text">
-                                                        <p><span id="yui_3_17_2_1_1686896993440_217">My wife &amp; I have
-                                                                moved 6 times in the last 25 years. Obviously, we&#8217;ve
-                                                                dealt with many realtors both on the buying and selling
-                                                                side. I have to say that Philip and Gary Benallyare by far
-                                                                the BEST realtor we&#8217;ve ever worked with, their
-                                                                professionalism, personality, attention to detail,
-                                                                responsiveness and his ability to</span> close the deal was
-                                                            Outstanding!!! If you are buying or selling a home, do
-                                                            yourselves a favor and hire Philip Carmody</p>
-                                                    </blockquote>
-                                                    <div class="mh-testimonial__photo">
-                                                        <img data-srcset="https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan-100x100.jpg 100w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan-300x300.jpg 300w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan-150x150.jpg 150w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan-400x400.jpg 400w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan-200x200.jpg 200w, https://carmodyrealestates.com/wp-content/uploads/2017/02/Alana-Dyan.jpg 634w"
-                                                            class="lazyload " data-sizes="auto" alt="Alana Dyan">
-                                                    </div>
-
-                                                    <div class="mh-testimonial__author-info">
-                                                        <h3 class="mh-testimonial__author">
-                                                            Alana Dyan </h3>
-
-                                                        <div class="mh-testimonial__occupation">
-                                                            Freelance WordPress Developer </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +209,7 @@
                                 <div class="wpb_wrapper"></div>
                             </div>
                         </div>
-                    </div>php artisa
+                    </div>
                 </section>
             </div>
         </div>

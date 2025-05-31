@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('author_image');
             $table->string('author_quote');
             $table->text('body');
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 
