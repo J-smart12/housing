@@ -8,10 +8,18 @@ use App\Models\SettingsModel;
 
 class BlogsController extends Controller
 {
-    public function index() {
-        $blogs = Blogs::all();
+    public function index(Request $request) {
+        // paginate
+        $page     = (int) $request->query('page', 1);
+        $limit    = (int) $request->query('limit', 10);
+        $sortBy   = $request->query('sortBy', 'latest');
+        
+        $query = Blogs::all();
+        $blogs = $query->paginate($limit, ['*'], 'page', $page);
+
         $settings = SettingsModel::where('id', 1)->first();
-        return view('blog.index', compact('blogs', 'settings'));
+        $recents = Blogs::latest()->take(6)->get();
+        return view('blog.index', compact('blogs', 'settings', 'recents'));
     }
 
     public function blog($slug) {

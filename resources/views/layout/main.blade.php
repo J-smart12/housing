@@ -1415,16 +1415,15 @@ Click the help icon above to learn more.
     <div class="mh-footer__inner">
         <div class="mh-layout">
             <div class="mh-footer__row">
-
-
                 <div class="mh-footer__row__column widget mh-footer__row__column--1of4">
 
                     <div class="mh-footer__logo">
-                        <img src={{ asset("wp-content/uploads/2017/03/logo-50-blue-white.png") }} alt="benallysrealestates.com">
+                        <img src={{ asset($settings->logo) }} alt="benallysrealestates.com">
                     </div>
 
                     <div class="mh-footer__text">
-                        {{$settings->slug}} </div>
+                        {{$settings->about_us}} 
+                    </div>
 
                     <address class="mh-footer__contact">
                         <i class="flaticon-pin"></i>
@@ -1456,29 +1455,13 @@ Click the help icon above to learn more.
                     id="tag_cloud-3">
                     <h3 class="mh-footer__heading">Features</h3>
                     <div class="tagcloud">
-                        <a href={{ url("features/air-conditioning/") }}
-                            class="tag-cloud-link tag-link-33 tag-link-position-1" style="font-size: 22pt;"
-                            aria-label="Air Conditioning (32 items)">Air Conditioning</a>
-                        <a href={{ url("features/ceiling-fan/") }} class="tag-cloud-link tag-link-30 tag-link-position-2"
-                            style="font-size: 9.5555555555556pt;" aria-label="Ceiling Fan (22 items)">Ceiling
-                            Fan</a>
-                        <a href={{ url("features/dishwasher/") }} class="tag-cloud-link tag-link-22 tag-link-position-3"
-                            style="font-size: 15pt;" aria-label="Dishwasher (26 items)">Dishwasher</a>
-                        <a href={{ url("features/fireplace/") }} class="tag-cloud-link tag-link-19 tag-link-position-4"
-                            style="font-size: 12.666666666667pt;" aria-label="Fireplace (24 items)">Fireplace</a>
-                        <a href={{ url("features/high-ceilings/") }} class="tag-cloud-link tag-link-28 tag-link-position-5"
-                            style="font-size: 8pt;" aria-label="High ceilings (21 items)">High ceilings</a>
-                        <a href={{ url("features/microwave/") }} class="tag-cloud-link tag-link-27 tag-link-position-6"
-                            style="font-size: 11.111111111111pt;" aria-label="Microwave (23 items)">Microwave</a>
-                        <a href={{ url("features/patio/") }} class="tag-cloud-link tag-link-25 tag-link-position-7"
-                            style="font-size: 16.555555555556pt;" aria-label="Patio (27 items)">Patio</a>
-                        <a href={{ url("features/porch/") }} class="tag-cloud-link tag-link-15 tag-link-position-8"
-                            style="font-size: 13.444444444444pt;" aria-label="Porch (25 items)">Porch</a>
-                        <a href={{ url("features/refrigerator/") }} class="tag-cloud-link tag-link-37 tag-link-position-9"
-                            style="font-size: 12.666666666667pt;"
-                            aria-label="Refrigerator (24 items)">Refrigerator</a>
-                        <a href={{ url("features/wifi/") }} class="tag-cloud-link tag-link-34 tag-link-position-10"
-                            style="font-size: 9.5555555555556pt;" aria-label="WiFi (22 items)">WiFi</a>
+                        {{-- @foreach ($features as $feature)
+                            <a href={{ url("features/".$feature->slug) }}
+                                class="tag-cloud-link tag-link-33 tag-link-position-{{ $feature->id }}" style="font-size: 22pt;"
+                                aria-label={{ $feature->name }}>
+                                {{ $feature->name }}
+                            </a>
+                        @endforeach --}}
                     </div>
                 </div>
                 <div class="mh-footer__row__column mh-footer__row__column--1of4 widget widget-mh-social-icons"

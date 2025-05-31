@@ -353,12 +353,15 @@
                     <div class="mh-widget-title">
                         <h3 class="mh-widget-title__text">About us</h3>
                     </div>
-                    <div class="widget-infobox"> <a href="#" title="About us"
-                            class="widget-infobox__image-wrapper">
+                    <div class="widget-infobox"> 
+                        <a href="#" title="About us" class="widget-infobox__image-wrapper">
                             <img src="wp-content/uploads/2017/01/Peter-Hendricks.jpg" alt="About us"
                                 class="widget-infobox__image">
                         </a>
-                        <div class="widget-infobox__text">{{ $blog->author_quote }}.</div>
+                        <div class="widget-infobox__text">
+                            {{-- {{ $settings->about_us }} --}}
+                            {{ $settings->slug }}.
+                        </div>
                     </div>
                 </section>
                 {{-- <section id="myhome-facebook-widget-3" class="widget widget-mh-facebook">

@@ -19,7 +19,8 @@ class FeaturesController extends Controller
 
     public function index($slug) {
         $settings = SettingsModel::where('id', 1)->first();
+        $features = Feature::latest()->limit(10)->get();
         $feature = Feature::where('slug', $slug)->first();
-        return view('features.index', compact('feature', 'settings'));
+        return view('features.index', compact('features','feature', 'settings'));
     }
 }

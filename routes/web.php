@@ -5,9 +5,12 @@ use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\FeaturedProperties;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\BlogsController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\DController;
 use App\Http\Controllers\FeaturesController;
 
 Route::get('api/properties', [PropertyController::class, 'index']);
+
 Route::get('/', [PropertyController::class, 'landing']);
 Route::get('/about-us', [PropertyController::class, 'about']);
 Route::get('/panel', [PropertyController::class, 'login']);
@@ -33,12 +36,5 @@ Route::prefix('blogs')->group(function () {
 
 Route::get('/features/{slug}', [FeaturesController::class, 'index']);
 
-Route::get('/city/{city}', function () {
-    return view('city.index');
-});
-
-Route::prefix('2017')->group(function () {
-    Route::get('/{id}', function () {
-        return view('2017.index');
-    });
-});
+Route::get('/city/{city}', [CityController::class, 'index']);
+Route::get('/{year}/{id}', [DController::class, 'index']);

@@ -13,8 +13,6 @@
 
         <div class="mh-top-title">
             <h1 class="mh-top-title__heading">{{ $feature->name }}</h1>
-
-
         </div>
         <div class="mh-layout mh-top-title-offset">
             <listing-grid id="myhome-listing-grid" class="mh-search-left" config-key='MyHomeListing1747769115'>
@@ -143,7 +141,8 @@
                 "theme_url": "https:\/\/carmodyrealestates.com\/wp-content\/themes\/myhome"
             };
             var MyHomeListing1747769115 = {
-                "fields": [{
+                "fields": [
+                {
                     "id": 1,
                     "name": "Property type",
                     "slug": "property-type",
